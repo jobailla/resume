@@ -1,0 +1,15 @@
+.notFound {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__mainTitle {
+        line-height: 1.5;
+        text-align: center;
+        font-size: 3rem
+    }
+
+    &__text {
+        text-align: center;
+    }
+}

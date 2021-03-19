@@ -1,0 +1,75 @@
+@import '../../styles/_settings/mixins.scss';
+
+.navBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+    z-index: 1000;
+    background-color: #28283c;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        min-height: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        flex-direction: row;
+        max-width: 900px;
+        z-index: 1000;
+        overflow-x: auto;
+        overflow-y: hidden;
+
+        &__menuIcon {
+            display: none;
+            position: absolute;
+            top: 10px;
+            color: white;
+            cursor: pointer;
+            margin-left: 14px;
+
+            @include media(phone) {
+                display: flex;
+            }
+        }
+    }
+
+    &__link {
+        &__group {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+
+            @include media(phone) {
+                display: none;
+            }
+
+            &__toggled {
+                display: flex;
+
+                @include media(phone) {
+                    flex-direction: column;
+                    margin-top: 56px;
+                    align-items: center;
+                    flex: 1;
+                }
+            }
+        }
+
+        position: relative;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        border: 0;
+        margin: 0;
+        padding: 10px 20px 10px 20px;
+        min-width: 42px;
+        z-index: 10;
+        cursor: pointer;
+    }
+}

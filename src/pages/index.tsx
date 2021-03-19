@@ -1,46 +1,39 @@
-import { graphql } from 'gatsby';
-import * as React from 'react';
-import * as styles from './Index.module.scss';
+import { graphql, useStaticQuery } from "gatsby";
+import * as React from "react";
+import Avatar from "../components/Avatar";
+import Layout from '../components/Layout';
+import "./index.scss";
 
-interface IndexPageProps {
-  data: {
-    site: {
-      siteMetadata: {
-        name: string;
-        tagline: string;
-        title: string;
-      },
-    },
-  };
+interface MetadataProps {
+  name: string;
+  tagline: string;
 }
 
-export const indexPageQuery = graphql`
-  query IndexPageQuery {
-    site {
-      siteMetadata {
-        name
-        tagline
-        title
+const IndexPage = () => {
+  const { site } = useStaticQuery(
+    graphql`
+      query IndexPageQuery {
+        site {
+          siteMetadata {
+            name
+            tagline
+          }
+        }
       }
-    }
-  }
-`;
+    `
+  );
 
-export default class IndexPage extends React.Component<IndexPageProps, {}> {
+  const { name, tagline }: MetadataProps = site.siteMetadata;
 
-  public render() {
-    const {
-      name,
-      tagline,
-      title
-    } = this.props.data.site.siteMetadata;
-
-    return (
-      <div className={styles.Container}>
+  return (
+    <>
+      <Layout>
         <h1>{name}</h1>
         <p>{tagline}</p>
-        <p>{title}</p>
-      </div>
-    );
-  }
-}
+        <Avatar altText="avatar" title="avatar" />
+        </Layout>
+    </>
+  );
+};
+
+export default IndexPage;
