@@ -5,9 +5,9 @@ import './Layout.scss';
 
 export default function Layout({ children }: any): React.ReactElement {
     return (
-        <div className="LayoutContainer">
+        <div>
             <Navbar />
-            <div>{children}</div>
+            {children}
         </div>
     )
 }

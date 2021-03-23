@@ -1,4 +1,5 @@
 @import '../../styles/_settings/mixins.scss';
+@import '../../styles//_settings/variables';
 
 .navBar {
     position: fixed;
@@ -8,7 +9,7 @@
     display: block;
     width: 100%;
     z-index: 1000;
-    background-color: #28283c;
+    background-color: $app-theme-color;
 
     &__header {
         display: flex;
@@ -26,7 +27,7 @@
             display: none;
             position: absolute;
             top: 10px;
-            color: white;
+            color: $white;
             cursor: pointer;
             margin-left: 14px;
 
@@ -64,7 +65,7 @@
         text-decoration: none;
         display: flex;
         align-items: center;
-        color: #fff;
+        color: $white;
         border: 0;
         margin: 0;
         padding: 10px 20px 10px 20px;

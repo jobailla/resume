@@ -1,27 +1,34 @@
-import React from 'react'
-import './404.scss'
-import Layout from '../components/Layout/Layout';
+import { graphql, useStaticQuery } from 'gatsby';
+import React from 'react';
+import Layout from '../components/Layout';
+import SEO from '../components/SEO';
+import Wrapper from '../components/Wrapper';
+import './404.scss';
 
 export default function NotFound(): React.ReactElement {
+    const { markdownRemark } = useStaticQuery(
+        graphql`
+            query MyQuery {
+              markdownRemark(frontmatter: {title: {eq: "Not Found"}}) {
+                id
+                frontmatter {
+                  description
+                }
+               html
+            }
+        }`
+    );
 
     return (
         <Layout>
             <div className="notFound">
-
-                {/* <SEO title="Page Not Found" /> */}
-                {/* <Hero
-                heroImg='/images/404.jpeg'
-                title='404'
-            /> */}
-                {/* <Wrapper> */}
-                <div className="notFound__mainTitle">
-                    404 Page non trouvée
+                <SEO title="Page Not Found" />
+                <Wrapper>
+                    <div className="notFound__mainTitle">
+                        {markdownRemark.frontmatter.description}
                     </div>
-                <div className="notFound__text">
-                    Il semble que vous ayez suivi un lien rompu
-                    ou que vous ayez entré une URL qui n'existe pas sur ce site.
-          </div>
-                {/* </Wrapper> */}
+                    <div className="notFound__text" dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
+                </Wrapper>
             </div>
         </Layout >
     )

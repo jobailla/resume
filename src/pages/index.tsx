@@ -2,38 +2,49 @@ import { graphql, useStaticQuery } from "gatsby";
 import * as React from "react";
 import Avatar from "../components/Avatar";
 import Layout from '../components/Layout';
+import SEO from '../components/SEO';
+import SocialLinks from "../components/SocialLinks";
+import Wrapper from '../components/Wrapper';
 import "./index.scss";
 
-interface MetadataProps {
-  name: string;
-  tagline: string;
-}
 
-const IndexPage = () => {
+
+export default function IndexPage(): React.ReactElement {
   const { site } = useStaticQuery(
     graphql`
       query IndexPageQuery {
         site {
           siteMetadata {
-            name
-            tagline
-          }
+            title
+            keywords
+            author
         }
       }
+    }
     `
   );
 
-  const { name, tagline }: MetadataProps = site.siteMetadata;
-
+  const { title, keywords, author } = site.siteMetadata
   return (
     <>
       <Layout>
-        <h1>{name}</h1>
-        <p>{tagline}</p>
-        <Avatar altText="avatar" title="avatar" />
-        </Layout>
+        <SEO title={title} keywords={keywords} />
+        <Wrapper>
+          <div className="page-content">
+            <div className="avatar">
+              <div className="avatar__image">
+                <Avatar altText="avatar" title="avatar" />
+              </div>
+            </div>
+            <div className="nameTitle">
+              {author}
+            </div>
+            <div className="social">
+              <SocialLinks />
+            </div>
+          </div>
+        </Wrapper>
+      </Layout>
     </>
   );
-};
-
-export default IndexPage;
+}

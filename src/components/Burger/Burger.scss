@@ -1,10 +1,12 @@
-  .BurgerMenu__container {
+@import '../../styles//_settings//variables';
+
+.BurgerMenu__container {
     display: flex;
     flex-direction: column;
     padding-left: 8px;
 
     i {
-      background-color: #fff;
+      background-color: $burger-color;
       width: 32px;
       height: 4px;
       margin: 4px;

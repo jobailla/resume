@@ -1,0 +1,97 @@
+@import '../../styles/_settings/variables';
+
+.wrapper {
+  display: flex;
+}
+
+.social {
+  .button {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    overflow: hidden;
+    background: $off-white;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-out;
+
+    span {
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 60px;
+      margin-left: 10px;
+      transition: all 0.3s ease-out;
+    }
+  }
+
+  .button:hover {
+    width: 155px;
+
+
+    .icon {
+
+      .darkblue {
+        background: #4267B2;
+      }
+
+      .lightblue {
+        background: #1DA1F2
+      }
+
+      .grey {
+        background: #333
+      }
+
+      .red {
+        background: #E1306C
+      }
+
+      .green {
+        background: #3AC24A
+      }
+
+      i {
+        color: #fff;
+      }
+    }
+  }
+
+  .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+
+    i {
+      font-size: 25px;
+      line-height: 60px;
+      transition: all 0.3s ease-out;
+    }
+  }
+}
+
+.darkblue {
+  color: #4267B2;
+}
+
+.lightblue {
+  color: #1DA1F2
+}
+
+.grey {
+  color: #333
+}
+
+.red {
+  color: #E1306C
+}
+
+.green {
+  color: #3AC24A
+}
