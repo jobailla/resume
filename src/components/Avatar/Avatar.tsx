@@ -2,13 +2,13 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-export default function Avatar(props: { url?: string; altText: string; title: string; }): React.ReactElement {
+export default function Avatar(props: { url?: string; altText: string; title: string}): React.ReactElement {
     const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "avatar.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 250, quality: 100) {
-            ...GatsbyImageSharpFluid_withWebp_tracedSVG
+          fluid(maxWidth: 500) {
+            ...GatsbyImageSharpFluid
           }
         }
       }
@@ -17,8 +17,10 @@ export default function Avatar(props: { url?: string; altText: string; title: st
 
     const { url, altText, title } = props;
     const styles = {
-        width: "250px",
-        height: "250px",
+        maxWidth: "200px",
+        maxHeight: "200px",
+        minWidth: "150px",
+        minHeight: "150px",
         borderRadius: "50%",
     };
 

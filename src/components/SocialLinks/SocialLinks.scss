@@ -1,21 +1,42 @@
 @import '../../styles/_settings/variables';
+@import '../../styles/_settings/mixins';
+
+$icon-full: 60px;
+$icon-min: 45px;
 
 .wrapper {
   display: flex;
+  padding-bottom: 12px;
+  max-height: $icon-full;
 }
 
 .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .button {
-    display: inline-block;
-    height: 60px;
-    width: 60px;
+    display: flex;
+    height: $icon-full;
+    width: $icon-full;
     margin: 0 5px;
     overflow: hidden;
     background: $off-white;
     border-radius: 50px;
     cursor: pointer;
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-out;
+
+    @include media(phone) {
+      width: $icon-min;
+      height: $icon-min;
+      margin: 0 15px;
+    }
+    
+    @include media(phoneSmall) {
+      width: $icon-min;
+      height: $icon-min;
+      margin: 0 5px;
+    }
 
     span {
       font-size: 20px;
@@ -26,9 +47,9 @@
     }
   }
 
+@media (hover: hover) and (pointer: fine) {
   .button:hover {
     width: 155px;
-
 
     .icon {
 
@@ -57,21 +78,34 @@
       }
     }
   }
-
+}
   .icon {
-    display: inline-block;
-    height: 60px;
-    width: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: $icon-full;
+    width: $icon-full;
+    line-height: $icon-full;
     text-align: center;
     border-radius: 50px;
     box-sizing: border-box;
-    line-height: 60px;
     transition: all 0.3s ease-out;
 
+    @include media(phone) {
+      width: $icon-min;
+      height: $icon-min;
+      line-height: $icon-min;
+    }
+
     i {
-      font-size: 25px;
-      line-height: 60px;
+      font-size: $icon-full / 2;
+      line-height: $icon-full;
       transition: all 0.3s ease-out;
+
+      @include media(phone) {
+        line-height: $icon-min;
+      font-size: $icon-min / 2;
+      }
     }
   }
 }

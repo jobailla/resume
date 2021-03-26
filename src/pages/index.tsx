@@ -33,7 +33,7 @@ export default function IndexPage(): React.ReactElement {
           <div className="page-content">
             <div className="avatar">
               <div className="avatar__image">
-                <Avatar altText="avatar" title="avatar" />
+                <Avatar altText="avatar" title="avatar"/>
               </div>
             </div>
             <div className="nameTitle">
