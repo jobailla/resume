@@ -1,9 +1,23 @@
 import React, { useState } from 'react'
-import { headerLinks } from '../../pages/siteConfig/header.json'
 import Burger from '../Burger/Burger'
 import './NavBar.scss'
+import { useStaticQuery, graphql } from 'gatsby'
 
 export default function Navbar(): React.ReactElement {
+    const { headerJson } = useStaticQuery(
+        graphql`
+      query headerQuery {
+         headerJson {
+            headerLinks {
+               label
+               url
+             }
+         }
+      }`
+    );
+
+
+    const { headerLinks } = headerJson;
     const [toggled, setToggled] = useState(false)
 
     return (
@@ -14,7 +28,7 @@ export default function Navbar(): React.ReactElement {
                     <Burger />
                 </div>
                 <div className={`navBar__link__group${toggled ? "__toggled" : ""}`}>
-                    {headerLinks.map((headerLink, i) => (
+                    {headerLinks.map((headerLink: { label: string; url: string; }, i: number) => (
                         <div className="navBar__link"
                             key={`header-link-${i}`}
                             onClick={() => setToggled(false)}>

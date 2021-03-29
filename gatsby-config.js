@@ -11,38 +11,6 @@ module.exports = {
     tagline: `developper resume`,
     author: `Jonathan Baillais`,
     keywords: ``,
-    socialLinks: [
-      {
-        site: `Github`,
-        icon: `fab fa-github`,
-        url: `https://github.com/jobailla/`,
-        color: `grey`
-      },
-      {
-        site: `Linkedin`,
-        icon: `fab fa-linkedin`,
-        url: `https://www.linkedin.com/in/jobailla42/`,
-        color: `darkblue`
-      },
-      {
-        site: `Twitter`,
-        icon: `fab fa-twitter`,
-        url: `https://www.twitter.com/jobailla/`,
-        color: "lightblue"
-      },
-      {
-        site: `Email`,
-        icon: `fas fa-envelope`,
-        url: `mailto:jbaillais@gmail.com`,
-        color: `red`
-      },
-      {
-        site: `CV`,
-        icon: `fas fa-file`,
-        url: `https://jonathan-baillais.fr/CV-Jonathan-BAILLAIS.pdf`,
-        color: `green`
-      }
-    ],
   },
   plugins: [
     // Filesystem
@@ -68,11 +36,12 @@ module.exports = {
       },
     },
     // JSON
+    `gatsby-transformer-json`,
     {
-      resolve: `gatsby-transformer-json`,
+      resolve: `gatsby-source-filesystem`,
       options: {
-        typeName: `Json`
-      }
+        path: `${__dirname}/src/pages/texts/`,
+      },
     },
     // Images
     `gatsby-plugin-sharp`,

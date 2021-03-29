@@ -3,21 +3,18 @@ import React from 'react';
 import './SocialLinks.scss';
 
 export default function SocialLinks(): React.ReactElement {
-    const { site } = useStaticQuery(
+    const { socialJson } = useStaticQuery(
         graphql`
-      query SocialLinkQuery {
-        site {
-          siteMetadata {
-            socialLinks {
-                site
-                icon
-                url
-                color
-            }
-          }
-        }
-      }
-    `
+            query SocialLinksQuery {
+           socialJson {
+             socialLinks {
+               site
+               icon
+               url
+               color
+             }
+           }
+         }`
     );
 
 
@@ -28,12 +25,11 @@ export default function SocialLinks(): React.ReactElement {
         color: string;
     }
 
-    const socials = site.siteMetadata.socialLinks
-    console.table(socials)
+    const  { socialLinks } = socialJson;
     return (
         <div className="wrapper">
-            {socials.map((social: Isocial, i: number) => (
-                <div className="social" key={`social-${site}-${i}`}>
+            {socialLinks.map((social: Isocial, i: number) => (
+                <div className="social" key={`social-${socialLinks[i].site}-${i}`}>
                     <a
                         href={social.url}
                         key={`${social.site}-${i}`}
