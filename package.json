@@ -12,7 +12,7 @@
     "type-coverage": "type-coverage"
   },
   "dependencies": {
-    "@babel/core": "^7.13.14",
+    "@babel/core": "^7.13.15",
     "@types/react-helmet": "^6.1.0",
     "@types/react-icons": "^3.0.0",
     "@types/react-scroll": "^1.8.2",
