@@ -17,8 +17,8 @@ export default function Avatar(props: { url?: string; altText: string; title: st
 
     const { url, altText, title } = props;
     const styles = {
-      width: "250px",
-      height: "250px",
+      width: "200px",
+      height: "200px",
       borderRadius: "50%",
     };
 

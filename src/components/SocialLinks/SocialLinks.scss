@@ -1,8 +1,8 @@
 @import '../../styles/_settings/variables';
 @import '../../styles/_settings/mixins';
 
-$icon-full: 55px;
-$icon-min: 45px;
+$icon-full: 5.5rem;
+$icon-min: 4.5rem;
 
 .wrapper {
   display: flex;
@@ -29,13 +29,11 @@ $icon-min: 45px;
     @include media(phone) {
       width: $icon-min;
       height: $icon-min;
-      margin: 0 15px;
     }
     
     @include media(phoneSmall) {
-      width: $icon-min;
-      height: $icon-min;
-      margin: 0 5px;
+      width: $icon-min - 1.5rem;
+      height: $icon-min - 1.5rem;
     }
 
     span {
@@ -98,6 +96,12 @@ $icon-min: 45px;
       height: $icon-min;
       line-height: $icon-min;
     }
+    
+    @include media(phoneSmall) {
+      width: $icon-min - 1.5rem;
+      height: $icon-min - 1.5rem;
+      line-height: $icon-min - 1.5rem;
+    }
 
     i {
       font-size: $icon-full / 2;
@@ -106,7 +110,11 @@ $icon-min: 45px;
 
       @include media(phone) {
         line-height: $icon-min;
-      font-size: $icon-min / 2;
+        font-size: $icon-min / 2;
+      }
+      @include media(phoneSmall) {
+        line-height: $icon-min - 1.5rem;
+        font-size: ($icon-min / 2) - 0.5rem;
       }
     }
   }
