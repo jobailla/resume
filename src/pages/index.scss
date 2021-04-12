@@ -6,20 +6,19 @@
 .page-content {
     margin-top: 150px;
     max-width: 100%;
-    margin-bottom: 40px;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 1fr repeat(2, 0.2fr);
+    grid-template-columns: 1fr;
+    grid-template-areas: "avatar" "name" "social";
 }
 
 .avatar {
-    &__image {
-        max-width: 250px;
-        max-height: 250px;
-        margin: 0 auto 24px;
-    }
+    grid-area: avatar;
 }
 
 .nameTitle {
-    display: flex;
-    justify-content: center;
+    grid-area: name;
     font-size: 30px;
     color: $black;
 
@@ -29,9 +28,5 @@
 }
 
 .social {
-        margin-top: 24px;
-        margin-bottom: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around
+    grid-area: social;
 }

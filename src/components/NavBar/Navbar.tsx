@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Burger from '../Burger/Burger'
+import Burger from '../Burger'
 import './NavBar.scss'
 import { useStaticQuery, graphql } from 'gatsby'
 
