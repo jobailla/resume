@@ -8,7 +8,7 @@ import './404.scss';
 export default function NotFound(): React.ReactElement {
     const { markdownRemark } = useStaticQuery(
         graphql`
-            query MyQuery {
+            query NotFoundQuery {
               markdownRemark(frontmatter: {title: {eq: "Not Found"}}) {
                 id
                 frontmatter {

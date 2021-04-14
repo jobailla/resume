@@ -1,12 +1,12 @@
 import { graphql, useStaticQuery } from "gatsby";
 import * as React from "react";
+import About from '../components/About/About';
 import Avatar from "../components/Avatar";
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import SocialLinks from "../components/SocialLinks";
 import Wrapper from '../components/Wrapper';
 import "./index.scss";
-
 
 
 export default function IndexPage(): React.ReactElement {
@@ -32,13 +32,20 @@ export default function IndexPage(): React.ReactElement {
         <Wrapper>
           <div className="page-content">
             <div className="avatar">
-                <Avatar altText="avatar" title="avatar"/>
+              <Avatar altText="avatar" title="avatar" />
             </div>
             <div className="nameTitle">
               {author}
             </div>
             <div className="social">
               <SocialLinks />
+            </div>
+          </div>
+          <div className="introduction">
+            <div className="about">
+              <About />
+            </div>
+            <div className="stack">
             </div>
           </div>
         </Wrapper>

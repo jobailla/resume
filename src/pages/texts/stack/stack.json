@@ -1,0 +1,263 @@
+{
+    "stack": [
+   {
+        "skill": "C",
+        "img": "/images/stack_img/c.svg",
+        "width": "30px",
+        "height": "30ox",
+        "link": "https://www.wikiwand.com/fr/C_(langage)"
+      },
+      {
+        "skill": "Python",
+        "img": "/images/stack_img/python.svg",
+        "width": "30px",
+        "height": "30ox",
+        "link": "https://www.python.org/"
+      },
+      {
+        "skill": "Typescript",
+        "img": "/images/stack_img/typescript.svg",
+        "width": "30px",
+        "height": "30ox",
+        "link": "https://www.typescriptlang.org/"
+      },
+      {
+        "skill": "Javascript",
+        "img": "/images/stack_img/javascript.svg",
+        "width": "30px",
+        "height": "30ox",
+        "link": "https://developer.mozilla.org/fr/docs/Web/JavaScript"
+      },
+      {
+        "skill": "MongoDB",
+        "img": "/images/stack_img/mongodb.svg",
+        "width": "35px",
+        "height": "30ox",
+        "link": "https://www.mongodb.com/"
+      },
+      {
+        "skill": "Express",
+        "img": "/images/stack_img/express.svg",
+        "width": "35px",
+        "height": "35px",
+        "link": "https://expressjs.com/"
+      },
+      {
+        "skill": "React",
+        "img": "/images/stack_img/react.svg",
+        "width": "40px",
+        "height": "35px",
+        "link": "https://reactjs.org/"
+      },
+      {
+        "skill": "Node.js",
+        "img": "/images/stack_img/node.svg",
+        "width": "40px",
+        "height": "40px",
+        "link": "https://nodejs.org/"
+      },
+      {
+        "skill": "Redux",
+        "img": "/images/stack_img/redux.svg",
+        "width": "30px",
+        "height": "30px",
+        "link": "https://redux.js.org/"
+      },
+      {
+        "skill": "Jest",
+        "img": "/images/stack_img/jest.svg",
+        "width": "30px",
+        "height": "30px",
+        "link": "https://jestjs.io/"
+      },
+      {
+        "skill": "HTML",
+        "img": "/images/stack_img/html.svg",
+        "width": "25px",
+        "height": "25px",
+        "link": "https://developer.mozilla.org/fr/docs/Web/HTML"
+      },
+      {
+        "skill": "CSS",
+        "img": "/images/stack_img/css.svg",
+        "width": "25px",
+        "height": "25px",
+        "link": "https://developer.mozilla.org/fr/docs/Web/CSS"
+      },
+      {
+        "skill": "SASS",
+        "img": "/images/stack_img/sass.svg",
+        "width": "30px",
+        "height": "30px",
+        "link": "https://sass-lang.com/"
+      },
+      {
+        "skill": "Firebase",
+        "img": "/images/stack_img/firebase.svg",
+        "width": "22px",
+        "height": "30px",
+        "link": "https://firebase.google.com/"
+      },
+      {
+        "skill": "Babel",
+        "img": "/images/stack_img/babel.svg",
+        "width": "50px",
+        "height": "30px",
+        "link": "https://babeljs.io/"
+      },
+      {
+        "skill": "eslint",
+        "img": "/images/stack_img/eslint.svg",
+        "width": "30px",
+        "height": "30px",
+        "link": "https://eslint.org/"
+      },
+      {
+        "skill": "Webpack",
+        "img": "/images/stack_img/webpack.svg",
+        "width": "30px",
+        "height": "30px",
+        "link": "https://webpack.js.org/"
+      },
+      {
+        "skill": "Material-UI",
+        "img": "/images/stack_img/material-ui.svg",
+        "width": "30px",
+        "height": "30px",
+        "link": "https://material-ui.com/"
+      },
+      {
+        "skill": "Ant design",
+        "img": "/images/stack_img/ant-design.svg",
+        "width": "30px",
+        "height": "30px",
+        "link": "https://ant.design/"
+      },
+      {
+        "skill": "Styled components",
+        "img": "/images/stack_img/styled-components.svg",
+        "width": "30px",
+        "height": "30px",
+        "link": "https://styled-components.com/"
+      },
+      {
+        "skill": "Gatsby",
+        "img": "/images/stack_img/gatsby.svg",
+        "width": "30px",
+        "height": "30px",
+        "link": "https://gatsbyjs.org"
+      },
+      {
+        "skill": "Github",
+        "img": "/images/stack_img/github.svg",
+        "width": "30px",
+        "height": "30px",
+        "link": "https://github.com/"
+      },
+      {
+        "skill": "npm",
+        "img": "/images/stack_img/npm.svg",
+        "width": "30px",
+        "height": "15px",
+        "link": "https://www.npmjs.com/"
+      },
+      {
+        "skill": "Windows",
+        "img": "/images/stack_img/windows.svg",
+        "width": "30px",
+        "height": "30px",
+        "link": "https://www.microsoft.com/fr-fr/windows/"
+      },
+      {
+        "skill": "vsCode",
+        "img": "/images/stack_img/vsCode.svg",
+        "width": "30px",
+        "height": "30px",
+        "link": "https://code.visualstudio.com/"
+      },
+      {
+        "skill": "Linux",
+        "img": "/images/stack_img/linux.svg",
+        "width": "30px",
+        "height": "30px",
+        "link": "https://github.com/torvalds/linux/"
+      },
+      {
+        "skill": "vim",
+        "img": "/images/stack_img/vim.svg",
+       "width": "30px",
+        "height": "30px",
+        "link": "https://github.com/vim/vim"
+      },
+      {
+        "skill": "OSX",
+        "img": "/images/stack_img/osx.svg",
+        "width": "30px",
+        "height": "30px",
+        "link": "https://www.apple.com/fr/macos"
+      },
+      {
+        "skill": "Raspberry Pi",
+        "img": "/images/stack_img/raspberry-pi.svg",
+        "width": "25px",
+        "height": "30px",
+        "link": "https://www.raspberrypi.org/"
+      },
+      {
+        "skill": "Adobe Photoshop",
+        "img": "/images/stack_img/ps.svg",
+        "width": "30px",
+        "height": "30px",
+        "link": "https://www.adobe.com/fr/products/photoshop.html"
+      },
+      {
+        "skill": "Adobe Premiere",
+        "img": "/images/stack_img/pr.svg",
+        "width": "30px",
+        "height": "30px",
+        "link": "https://www.adobe.com/fr/products/premiere.html"
+      },
+      {
+        "skill": "Adobe After Effect",
+        "img": "/images/stack_img/ae.svg",
+        "width": "30px",
+        "height": "30px",
+        "link": "https://www.adobe.com/fr/products/aftereffects.html"
+      },
+      {
+        "skill": "Word",
+        "img": "/images/stack_img/word.svg",
+        "width": "30px",
+        "height": "30px",
+        "link": "https://www.microsoft.com/fr-fr/microsoft-365/word"
+      },
+      {
+        "skill": "Excel",
+        "img": "/images/stack_img/excel.svg",
+        "width": "30px",
+        "height": "30px",
+        "link": "https://www.microsoft.com/fr-fr/microsoft-365/excel"
+      },
+      {
+        "skill": "Powerpoint",
+        "img": "/images/stack_img/powerpoint.svg",
+        "width": "30px",
+        "height": "30px",
+        "link": "https://www.microsoft.com/fr-fr/microsoft-365/powerpoint"
+      },
+      {
+        "skill": "Teams",
+        "img": "/images/stack_img/teams.svg",
+        "width": "30px",
+        "height": "30px",
+        "link": "https://www.microsoft.com/fr-fr/microsoft-365/microsoft-teams/group-chat-software"
+      },
+      {
+        "skill": "Slack",
+        "img": "/images/stack_img/slack.svg",
+        "width": "30px",
+        "height": "30px",
+        "link": "https://slack.com/intl/fr-fr/"
+      }
+    ]
+}

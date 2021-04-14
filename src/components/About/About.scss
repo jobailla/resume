@@ -1,0 +1,21 @@
+@import '../../styles/_settings/variables';
+@import '../../styles/_settings/mixins';
+
+.About {
+    &__title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        
+        &__description {
+            margin-left: 1rem;
+            margin-top: 0.5rem;
+            font-size: 26px;
+            
+        }
+    }
+
+    &__text {
+        margin-top: 2rem;
+    }
+}

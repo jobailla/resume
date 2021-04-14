@@ -8,9 +8,13 @@
     max-width: 100%;
     display: grid;
     justify-items: center;
-    grid-template-rows: 1fr repeat(2, 0.2fr);
+    grid-template-rows: 200px repeat(3, 1fr);
     grid-template-columns: 1fr;
-    grid-template-areas: "avatar" "name" "social";
+    grid-template-areas: 
+        "avatar"
+        "name"
+        "social"
+        "intro";
 }
 
 .avatar {
@@ -29,4 +33,26 @@
 
 .social {
     grid-area: social;
+}
+
+.introduction {
+    grid-area: intro;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: subgrid;
+    grid-template-areas: "about stack";
+    gap: 5%;
+
+    @include media(tablet) {
+        grid-template-columns: 1fr;
+        grid-template-areas: "about" "stack";
+    }
+}
+
+.about {
+    grid-area: about;
+}
+
+.stack {
+    grid-area: stack;
 }

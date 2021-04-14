@@ -8,7 +8,7 @@ export default function Avatar(props: { url?: string; altText: string; title: st
       placeholderImage: file(relativePath: { eq: "avatar.jpg" }) {
         childImageSharp {
           fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluid_tracedSVG
           }
         }
       }
