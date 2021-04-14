@@ -45,6 +45,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.18.0",
     "@typescript-eslint/parser": "^4.22.0",
+    "gatsby-plugin-react-image-map": "^1.0.0-4",
     "gatsby-plugin-tslint": "^0.0.2",
     "tslint": "^5.18.0",
     "tslint-loader": "^3.5.4",

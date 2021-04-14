@@ -20,7 +20,6 @@ export default function About(): React.ReactElement {
 
     return (
         <div className="About">
-            <SEO title="About" />
             <div className="About__title">
                 <FaUserAlt size={28} />
                 <div className="About__title__description">

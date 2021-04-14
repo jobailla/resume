@@ -46,6 +46,8 @@ module.exports = {
     // Images
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
+    `gatsby-plugin-react-image-map`,
+
     // SCSS
     `gatsby-plugin-sass`,
     // Typescript

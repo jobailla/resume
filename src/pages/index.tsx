@@ -5,6 +5,7 @@ import Avatar from "../components/Avatar";
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import SocialLinks from "../components/SocialLinks";
+import Stack from "../components/Stack";
 import Wrapper from '../components/Wrapper';
 import "./index.scss";
 
@@ -46,6 +47,7 @@ export default function IndexPage(): React.ReactElement {
               <About />
             </div>
             <div className="stack">
+              <Stack />
             </div>
           </div>
         </Wrapper>

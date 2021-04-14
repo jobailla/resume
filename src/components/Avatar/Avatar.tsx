@@ -16,19 +16,19 @@ export default function Avatar(props: { url?: string; altText: string; title: st
   `);
 
     const { url, altText, title } = props;
-    const styles = {
+    const style = {
       width: "200px",
       height: "200px",
       borderRadius: "50%",
     };
 
     if (url) {
-        return <img style={styles} src={url} alt={altText} title={title} />;
+        return <img style={style} src={url} alt={altText} title={title} />;
     }
 
     return (
         <Img
-            style={styles}
+            style={style}
             fluid={data.placeholderImage.childImageSharp.fluid}
             alt={altText}
             title={title}
