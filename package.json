@@ -30,7 +30,7 @@
     "gatsby-plugin-typescript": "^2.1.2",
     "gatsby-source-filesystem": "^3.2.0",
     "gatsby-transformer-json": "^3.1.0",
-    "gatsby-transformer-remark": "^3.2.0",
+    "gatsby-transformer-remark": "^4.0.0",
     "gatsby-transformer-sharp": "^3.0.0",
     "node-sass": "^4.13.1",
     "prettier": "^2.2.1",
