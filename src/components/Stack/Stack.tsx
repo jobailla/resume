@@ -1,11 +1,12 @@
 import { graphql, useStaticQuery } from 'gatsby';
+import Img from 'gatsby-image';
 import React from 'react';
 import { GrStackOverflow } from 'react-icons/gr';
 import './Stack.scss';
 
 export default function Stack(): React.ReactElement {
-    const stack = useStaticQuery(
-        graphql`
+  const stack = useStaticQuery(
+    graphql`
           query StackQuery {
     allFile(filter: {dir: {regex: "/stack_img/"}}, sort: {fields: base}) {
       edges {
@@ -13,34 +14,35 @@ export default function Stack(): React.ReactElement {
           name
           publicURL
           childImageSharp {
-            fluid(maxWidth: 35, quality: 100) {
-              ...GatsbyImageSharpFluid
+            fluid(maxWidth: 50 quality: 100) {
+              ...GatsbyImageSharpFluid_tracedSVG
             }
           }
         }
       }
     }
          }`
-    );
+  );
 
-    const { edges } = stack.allFile
+  const { edges } = stack.allFile
 
-    return (
-        <div className="Stack">
-            <div className="Stack__title">
-                <GrStackOverflow size={28} />
-                <div className="Stack__title__description">
-                    Stack
+  return (
+    <div className="Stack">
+      <div className="Stack__title">
+        <GrStackOverflow size={28} />
+        <div className="Stack__title__description">
+          Stack
                 </div>
-            </div>
-            <div className="Stack__images">
-                {
+      </div>
+      <div className="Stack__images">
+        {
                     edges.map((_image: undefined, i: React.Key) => (
-                        <img width={35} key={i} src={edges[i].node.publicURL} />
-
+                      <div className="image" key={i}>
+                        <Img fluid={edges[i].node.childImageSharp.fluid} />
+                      </div>
                     ))
                 }
-            </div>
-        </div>
-    )
+      </div>
+    </div>
+  )
 }
