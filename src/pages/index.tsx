@@ -27,7 +27,7 @@ export default function IndexPage(): React.ReactElement {
 
   const { title, keywords, author } = site.siteMetadata
   return (
-    <>
+    <div className="resume">
       <Layout>
         <SEO title={title} keywords={keywords} />
         <Wrapper>
@@ -52,6 +52,6 @@ export default function IndexPage(): React.ReactElement {
           </div>
         </Wrapper>
       </Layout>
-    </>
+    </div>
   );
 }

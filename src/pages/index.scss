@@ -3,6 +3,11 @@
 @import '../styles/_settings/mixins';
 @import '../styles/_settings/base';
 
+
+.resume {
+    display: grid;
+}
+
 .page-content {
     margin-top: 150px;
     max-width: 100%;

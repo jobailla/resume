@@ -1,7 +1,7 @@
 @import '../../styles/_settings/variables';
 @import '../../styles/_settings/mixins';
 
-$icon-full: 5.5rem;
+$icon-full: 5rem;
 $icon-min: 4.5rem;
 
 .wrapper {
@@ -14,6 +14,7 @@ $icon-min: 4.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
+
   .button {
     display: flex;
     max-height: $icon-full;
@@ -30,7 +31,7 @@ $icon-min: 4.5rem;
       width: $icon-min;
       height: $icon-min;
     }
-    
+
     @include media(phoneSmall) {
       width: $icon-min - 1.5rem;
       height: $icon-min - 1.5rem;
@@ -45,40 +46,41 @@ $icon-min: 4.5rem;
     }
   }
 
-@media (hover: hover) and (pointer: fine) {
-  .button:hover {
-    max-width: 15rem;
-    padding-right: 1.5rem;
-    transition: max-width 0.3s ease-out;
+  @media (hover: hover) and (pointer: fine) {
+    .button:hover {
+      max-width: 15rem;
+      padding-right: 1.5rem;
+      transition: max-width 0.3s ease-out;
 
-    .icon {
+      .icon {
 
-      .darkblue {
-        background: #4267B2;
-      }
+        .darkblue {
+          background: #4267B2;
+        }
 
-      .lightblue {
-        background: #1DA1F2
-      }
+        .lightblue {
+          background: #1DA1F2
+        }
 
-      .grey {
-        background: #333
-      }
+        .grey {
+          background: #333
+        }
 
-      .red {
-        background: #E1306C
-      }
+        .red {
+          background: #E1306C
+        }
 
-      .green {
-        background: #3AC24A
-      }
+        .green {
+          background: #3AC24A
+        }
 
-      i {
-        color: #fff;
+        i {
+          color: #fff;
+        }
       }
     }
   }
-}
+
   .icon {
     display: flex;
     justify-content: center;
@@ -96,7 +98,7 @@ $icon-min: 4.5rem;
       height: $icon-min;
       line-height: $icon-min;
     }
-    
+
     @include media(phoneSmall) {
       width: $icon-min - 1.5rem;
       height: $icon-min - 1.5rem;
@@ -112,6 +114,7 @@ $icon-min: 4.5rem;
         line-height: $icon-min;
         font-size: $icon-min / 2;
       }
+
       @include media(phoneSmall) {
         line-height: $icon-min - 1.5rem;
         font-size: ($icon-min / 2) - 0.5rem;

@@ -23,10 +23,6 @@ export default function Stack(): React.ReactElement {
          }`
     );
 
-    const style = {
-        width: "30px"
-    }
-
     const { edges } = stack.allFile
 
     return (
@@ -44,8 +40,6 @@ export default function Stack(): React.ReactElement {
 
                     ))
                 }
-
-
             </div>
         </div>
     )
