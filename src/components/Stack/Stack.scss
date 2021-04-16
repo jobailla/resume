@@ -11,7 +11,6 @@ $icon-size: 45px;
 
         &__description {
             margin-left: 1rem;
-            margin-top: 0.5rem;
             font-size: 26px;
 
         }
@@ -24,6 +23,8 @@ $icon-size: 45px;
         margin-top: 1rem;
         justify-items: center;
         align-items: center;
+        justify-content: center;
+        margin-bottom: $icon-size;
         gap: 10px;
 
         @include media(laptop) {
@@ -41,6 +42,7 @@ $icon-size: 45px;
 
         @include media(phoneSmall) {
             grid-template-columns: repeat(3, $icon-size);
+            margin-bottom: $icon-size * 2;
         }
     }
 

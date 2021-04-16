@@ -9,27 +9,31 @@
 }
 
 .page-content {
-    margin-top: 150px;
+    margin-top: 14rem;
     max-width: 100%;
     display: grid;
-    justify-items: center;
-    grid-template-rows: 200px repeat(3, 1fr);
+    grid-template-rows: repeat(5, auto);
     grid-template-columns: 1fr;
+    gap: 2rem;
     grid-template-areas: 
         "avatar"
         "name"
         "social"
-        "intro";
+        "intro"
+        "education";
+
 }
 
 .avatar {
     grid-area: avatar;
+    margin: auto;
 }
 
 .nameTitle {
     grid-area: name;
     font-size: 30px;
     color: $black;
+    margin: auto;
 
     @include media(phoneSmall) {
         font-size: 24px;
@@ -38,19 +42,18 @@
 
 .social {
     grid-area: social;
+    margin: auto;
 }
 
 .introduction {
     grid-area: intro;
     display: grid;
-    justify-items: center;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: subgrid;
+    grid-template-columns: repeat(2, auto);
     grid-template-areas: "about stack";
     gap: 5%;
 
     @include media(tablet) {
-        grid-template-columns: 1fr;
+        grid-template-columns: auto;
         grid-template-areas: "about" "stack";
     }
 }
@@ -61,4 +64,8 @@
 
 .stack {
     grid-area: stack;
+}
+
+.education {
+    grid-area: education;
 }

@@ -10,11 +10,16 @@
     word-wrap: break-word;
     margin: 0px auto 30px auto;
     top: -100px;
-    padding: 50px;
+    padding: 2.5rem;
     box-shadow: 0 0 0 0, 0 6px 12px rgba(0, 0, 0, 0.1);
     min-height: 280px;
 
+    @include media(tablet) {
+        padding: 1.5rem;
+    }
+
     @include media(phone) {
         width: 100%;
+        padding: 1rem;
     }
 }
