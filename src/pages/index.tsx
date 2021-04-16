@@ -2,6 +2,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import * as React from "react";
 import About from '../components/About/About';
 import Avatar from "../components/Avatar";
+import Divider from "../components/Divider";
 import Education from "../components/Education";
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
@@ -50,8 +51,14 @@ export default function IndexPage(): React.ReactElement {
                 <Stack />
               </div>
             </div>
+            <div id="divider-1">
+              <Divider />
+            </div>
             <div className="education">
               <Education />
+              <div id="divider-2">
+                <Divider />
+              </div>
             </div>
           </div>
         </Wrapper>

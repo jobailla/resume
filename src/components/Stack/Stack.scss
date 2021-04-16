@@ -24,16 +24,16 @@ $icon-size: 45px;
         justify-items: center;
         align-items: center;
         justify-content: center;
-        margin-bottom: $icon-size;
         gap: 10px;
-
+        
         @include media(laptop) {
             grid-template-columns: repeat(5, $icon-size);
             gap: 8px 20px;
         }
-
+        
         @include media(tablet) {
             grid-template-columns: repeat(5, $icon-size);
+            margin-bottom: $icon-size;
         }
 
         @include media(phone) {

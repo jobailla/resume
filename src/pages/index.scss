@@ -12,7 +12,7 @@
     margin-top: 14rem;
     max-width: 100%;
     display: grid;
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(auto, auto);
     grid-template-columns: 1fr;
     gap: 2rem;
     grid-template-areas: 
@@ -20,8 +20,19 @@
         "name"
         "social"
         "intro"
-        "education";
+        "divider-1"
+        "education"
+        "divider-2"
+        ;
+}
 
+#divider {
+    &-1 {
+        grid-area: divider-1;
+    }
+    &-2 {
+        grid-area: divider-2;
+    }
 }
 
 .avatar {
