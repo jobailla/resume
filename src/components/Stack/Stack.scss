@@ -1,7 +1,7 @@
 @import '../../styles/_settings/variables';
 @import '../../styles/_settings/mixins';
 
-$icon-size: auto;
+$icon-size: 45px;
 
 .Stack {
     &__title {
@@ -21,12 +21,21 @@ $icon-size: auto;
     &__images {
         display: grid;
         grid-template-columns: repeat(7, $icon-size);
-        margin-top: 2rem;
+        margin-top: 1rem;
         justify-items: center;
         align-items: center;
         gap: 10px;
 
         @include media(laptop) {
+            grid-template-columns: repeat(5, $icon-size);
+            gap: 8px 20px;
+        }
+
+        @include media(tablet) {
+            grid-template-columns: repeat(5, $icon-size);
+        }
+
+        @include media(phone) {
             grid-template-columns: repeat(5, $icon-size);
         }
 
@@ -35,7 +44,24 @@ $icon-size: auto;
         }
     }
 
-    .image {
-        width: 40px;
+    .logo {
+        width: $icon-size;
+
+        @include media(laptop) {
+            width: $icon-size - 10px;
+        }
+
+        @include media(tablet) {
+            width: $icon-size - 10px;
+        }
+
+        @include media(phone) {
+            width: $icon-size;
+        }
+
+        @include media(phoneSmall) {
+            width: $icon-size - 10px;
+        }
+
     }
 }
