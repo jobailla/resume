@@ -43,6 +43,7 @@
 .introduction {
     grid-area: intro;
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: subgrid;
     grid-template-areas: "about stack";

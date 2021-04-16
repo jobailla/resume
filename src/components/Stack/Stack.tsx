@@ -36,12 +36,12 @@ export default function Stack(): React.ReactElement {
       </div>
       <div className="Stack__images">
         {
-                    edges.map((_image: undefined, i: React.Key) => (
-                      <div className="image" key={i}>
-                        <Img fluid={edges[i].node.childImageSharp.fluid} />
-                      </div>
-                    ))
-                }
+          edges.map((_image: undefined, i: React.Key) => (
+            <div className="logo" key={i}>
+              <Img fluid={edges[i].node.childImageSharp.fluid} />
+            </div>
+          ))
+        }
       </div>
     </div>
   )
