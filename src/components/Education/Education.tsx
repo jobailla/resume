@@ -48,7 +48,7 @@ export default function Education(): ReactElement {
             <div className="Education__title">
                 <FaUniversity size={28} />
                 <div className="Education__title__description">
-                    Education
+                    Études
                 </div>
             </div>
             <div className="Education__content">

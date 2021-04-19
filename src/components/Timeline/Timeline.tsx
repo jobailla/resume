@@ -41,7 +41,7 @@ export default function Timeline(): ReactElement {
             <div className="Timeline__title">
                 <FaSuitcase size={28} />
                 <div className="Timeline__title__description">
-                    Expériences
+                    Éxpériences
                 </div>
 
             </div>
