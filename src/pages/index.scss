@@ -40,25 +40,20 @@
 
 .nameTitle {
     grid-area: name;
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: $black;
     margin: 1rem auto;
-
-    @include media(phoneSmall) {
-        font-size: 24px;
-    }
 }
 
 .links {
     margin: auto;
 }
 
-.about {}
-
 .introduction {
     grid-area: intro;
     display: grid;
-    grid-template-columns: 35% auto;
+    grid-template-columns: 33% auto;
+    gap: 1%;
     grid-template-areas: "social about";
 
     @include media(tablet) {
@@ -70,7 +65,8 @@
 
 .cursus {
     display: grid;
-    grid-template-columns: 35% auto;
+    grid-template-columns: 33% auto;
+    gap: 1%;
     grid-template-areas: "stack education";
 
     @include media(tablet) {

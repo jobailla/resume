@@ -1,7 +1,7 @@
 @import '../../styles/_settings/variables';
 @import '../../styles/_settings/mixins';
 
-$icon-size: 35px;
+$icon-size: 30px;
 
 .Stack {
     @include media(tablet) {
@@ -26,7 +26,7 @@ $icon-size: 35px;
 
     &__images {
         display: grid;
-        grid-template-columns: repeat(7, $icon-size);
+        grid-template-columns: repeat(5, $icon-size);
         margin-top: 1rem;
         justify-items: center;
         align-items: center;
