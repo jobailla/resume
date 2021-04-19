@@ -2,6 +2,9 @@
 @import '../../styles/_settings/mixins';
 
 .Education {
+    @include media(tablet) {
+        @include box-shadow-container
+    }
 
     &__title {
         display: flex;
@@ -15,11 +18,6 @@
 
     &__content {
         margin-top: 1rem;
-        border: 1px solid rgba(0, 0, 0, 0.274);
-        border-radius: 15px;
-        padding: 20px;
-        background-color: $off-white;
-        box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
     }
 
     &__edu {
@@ -54,6 +52,7 @@
             margin-left: 1rem;
             font-style: italic;
             font-size: $font-size-desktop;
+
             @include media(phone) {
                 font-size: $font-size-mobile;
             }
@@ -64,7 +63,7 @@
         display: flex;
         align-items: center;
 
-         &__flag {
+        &__flag {
             margin: 0;
             margin-right: 6px
         }

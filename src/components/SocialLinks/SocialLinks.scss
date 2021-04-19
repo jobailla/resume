@@ -1,24 +1,22 @@
 @import '../../styles/_settings/variables';
 @import '../../styles/_settings/mixins';
 
-$icon-full: 5rem;
-$icon-min: 4.5rem;
 
 .wrapper {
   display: flex;
-  max-height: $icon-full;
+  max-height: $social-icon-full;
   max-width: 270px;
   align-items: center;
   justify-content: center;
 }
 
-.social {
+.socialLinks {
   display: flex;
 
   .button {
     display: flex;
-    max-height: $icon-full;
-    max-width: $icon-full;
+    max-height: $social-icon-full;
+    max-width: $social-icon-full;
     overflow: hidden;
     transition: max-width 0.3s ease-out;
     margin: 0 5px;
@@ -28,22 +26,26 @@ $icon-min: 4.5rem;
     box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.1);
 
     @include media(phone) {
-      width: $icon-min;
-      height: $icon-min;
+      width: $social-icon-min;
+      height: $social-icon-min;
     }
 
     @include media(phoneSmall) {
-      width: $icon-min - 1.5rem;
-      height: $icon-min - 1.5rem;
+      width: $social-icon-min;
+      height: $social-icon-min;
     }
 
     span {
       display: flex;
       align-items: center;
-      font-size: 20px;
+      font-size: $font-size-desktop;
       font-weight: 500;
       margin-left: 10px;
       transition: all 0.3s ease-out;
+
+      @include media(phone) {
+        font-size: $font-size-mobile;
+      }
     }
   }
 
@@ -86,39 +88,39 @@ $icon-min: 4.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: $icon-full;
-    width: $icon-full;
-    line-height: $icon-full;
+    height: $social-icon-full;
+    width: $social-icon-full;
+    line-height: $social-icon-full;
     text-align: center;
     border-radius: 50px;
     box-sizing: border-box;
     transition: all 0.3s ease-out;
 
     @include media(phone) {
-      width: $icon-min;
-      height: $icon-min;
-      line-height: $icon-min;
+      width: $social-icon-min;
+      height: $social-icon-min;
+      line-height: $social-icon-min;
     }
 
     @include media(phoneSmall) {
-      width: $icon-min - 1.5rem;
-      height: $icon-min - 1.5rem;
-      line-height: $icon-min - 1.5rem;
+      width: $social-icon-min;
+      height: $social-icon-min;
+      line-height: $social-icon-min;
     }
 
     i {
-      font-size: $icon-full / 2;
-      line-height: $icon-full;
+      font-size: $social-icon-full / 2;
+      line-height: $social-icon-full;
       transition: all 0.3s ease-out;
 
       @include media(phone) {
-        line-height: $icon-min;
-        font-size: $icon-min / 2;
+        line-height: $social-icon-min;
+        font-size: $social-icon-min / 2;
       }
 
       @include media(phoneSmall) {
-        line-height: $icon-min - 1.5rem;
-        font-size: ($icon-min / 2) - 0.5rem;
+        line-height: $social-icon-min;
+        font-size: ($social-icon-min / 2);
       }
     }
   }

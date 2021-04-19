@@ -29,7 +29,7 @@ export default function SocialLinks(): React.ReactElement {
     return (
         <div className="wrapper">
             {socialLinks.map((social: Isocial, i: number) => (
-                <div className="social" key={`social-${socialLinks[i].site}-${i}`}>
+                <div className="socialLinks" key={`social-${socialLinks[i].site}-${i}`}>
                     <a
                         href={social.url}
                         key={`${social.site}-${i}`}

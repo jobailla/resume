@@ -4,18 +4,23 @@
 .Wrapper {
     position: relative;
     border-radius: 3px;
-    width: 80%;
-    max-width: 900px;
+    width: 85%;
+    max-width: 1400px;
     border-bottom: 1px solid $off-white;
     word-wrap: break-word;
     margin: 0px auto 30px auto;
-    top: -100px;
     padding: 2.5rem;
     box-shadow: 0 0 0 0, 0 6px 12px rgba(0, 0, 0, 0.1);
     min-height: 280px;
 
+    @include media(laptop) {
+        padding: 1.5rem;
+        width: 90%;
+    }
+    
     @include media(tablet) {
         padding: 1.5rem;
+        width: 95%;
     }
 
     @include media(phone) {

@@ -1,9 +1,13 @@
 @import '../../styles/_settings/variables';
 @import '../../styles/_settings/mixins';
 
-$icon-size: 45px;
+$icon-size: 35px;
 
 .Stack {
+    @include media(tablet) {
+        @include box-shadow-container
+    }
+
     &__title {
         display: flex;
         flex-direction: row;
@@ -28,14 +32,13 @@ $icon-size: 45px;
         align-items: center;
         justify-content: center;
         gap: 10px;
-        
+
         @include media(laptop) {
             grid-template-columns: repeat(5, $icon-size);
-            gap: 8px 20px;
         }
-        
+
         @include media(tablet) {
-            grid-template-columns: repeat(5, $icon-size);
+            grid-template-columns: repeat(7, $icon-size);
             margin-bottom: $icon-size;
         }
 
@@ -51,14 +54,6 @@ $icon-size: 45px;
 
     .logo {
         width: $icon-size;
-
-        @include media(laptop) {
-            width: $icon-size - 10px;
-        }
-
-        @include media(tablet) {
-            width: $icon-size - 10px;
-        }
 
         @include media(phone) {
             width: $icon-size;

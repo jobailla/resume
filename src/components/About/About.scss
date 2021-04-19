@@ -2,14 +2,19 @@
 @import '../../styles/_settings/mixins';
 
 .About {
+    @include media(tablet) {
+        margin-top: 1rem;
+        @include box-shadow-container
+    }
+
     &__title {
         display: flex;
         flex-direction: row;
-        
+
         &__description {
             margin-left: 1rem;
             font-size: $font-size-section-title-desktop;
-            
+
             @include media(phone) {
                 font-size: $font-size-section-title-mobile;
             }
@@ -20,9 +25,10 @@
         margin-top: 2rem;
         font-size: $font-size-desktop;
 
-            @include media(phone) {
-                font-size: $font-size-mobile;  
-            }
+
+        @include media(phone) {
+            font-size: $font-size-mobile;
+        }
 
     }
 }

@@ -18,7 +18,7 @@
   }
 
   @if $breakpoint==laptop {
-    @media only screen and (max-width: 1025px) {
+    @media only screen and (max-width: 1200px) {
       @content;
     }
   }
@@ -28,4 +28,12 @@
       @content;
     }
   }
+}
+
+@mixin box-shadow-container {
+  border: 1px solid #999;
+  border-radius: 15px;
+  padding: 15px;
+  background-color: $off-white;
+  box-shadow: 25px 25px 25px rgba(90, 90, 90, 0.1);
 }

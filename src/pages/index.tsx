@@ -35,30 +35,30 @@ export default function IndexPage(): React.ReactElement {
         <SEO title={title} keywords={keywords} />
         <Wrapper>
           <div className="page-content">
-            <div className="avatar">
-              <Avatar altText="avatar" title="avatar" />
-            </div>
-            <div className="nameTitle">
-              {author}
-            </div>
-            <div className="social">
-              <SocialLinks />
-            </div>
             <div className="introduction">
+              <div className="social" >
+                <div className="avatar">
+                  <Avatar altText="avatar" title="avatar" />
+                </div>
+                <div className="nameTitle">
+                  {author}
+                </div>
+                <div className="links">
+                  <SocialLinks />
+                </div>
+              </div>
               <div className="about">
                 <About />
               </div>
+            </div>
+
+            <div className="cursus">
               <div className="stack">
                 <Stack />
               </div>
-            </div>
-            <div id="divider-1">
-              <Divider />
-            </div>
-            <div className="education">
-              <Education />
-              <div id="divider-2">
-                <Divider />
+
+              <div className="education">
+                <Education />
               </div>
             </div>
             <div className="timeline">
