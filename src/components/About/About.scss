@@ -5,16 +5,24 @@
     &__title {
         display: flex;
         flex-direction: row;
-        align-items: center;
         
         &__description {
             margin-left: 1rem;
-            font-size: 26px;
+            font-size: $font-size-section-title-desktop;
             
+            @include media(phone) {
+                font-size: $font-size-section-title-mobile;
+            }
         }
     }
 
     &__text {
         margin-top: 2rem;
+        font-size: $font-size-desktop;
+
+            @include media(phone) {
+                font-size: $font-size-mobile;  
+            }
+
     }
 }

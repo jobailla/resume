@@ -7,11 +7,14 @@ $icon-size: 45px;
     &__title {
         display: flex;
         flex-direction: row;
-        align-items: center;
 
         &__description {
             margin-left: 1rem;
-            font-size: 26px;
+            font-size: $font-size-section-title-desktop;
+
+            @include media(phone) {
+                font-size: $font-size-section-title-mobile;
+            }
 
         }
 
