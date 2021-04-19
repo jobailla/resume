@@ -23,6 +23,7 @@
         "divider-1"
         "education"
         "divider-2"
+        "timeline"
         ;
 }
 
@@ -38,6 +39,9 @@
 .avatar {
     grid-area: avatar;
     margin: auto;
+    border-radius: 50%;
+    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.1);
+
 }
 
 .nameTitle {
@@ -79,4 +83,8 @@
 
 .education {
     grid-area: education;
+}
+
+.timeline {
+    grid-area: timeline;
 }

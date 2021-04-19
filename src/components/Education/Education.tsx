@@ -43,8 +43,6 @@ export default function Education(): ReactElement {
         level: string;
     }
 
-
-    console.log(languages)
     return (
         <div className="Education">
             <div className="Education__title">

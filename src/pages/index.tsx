@@ -8,6 +8,7 @@ import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import SocialLinks from "../components/SocialLinks";
 import Stack from "../components/Stack";
+import Timeline from "../components/Timeline";
 import Wrapper from '../components/Wrapper';
 import "./index.scss";
 
@@ -59,6 +60,9 @@ export default function IndexPage(): React.ReactElement {
               <div id="divider-2">
                 <Divider />
               </div>
+            </div>
+            <div className="timeline">
+              <Timeline />
             </div>
           </div>
         </Wrapper>

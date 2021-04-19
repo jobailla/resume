@@ -1,0 +1,15 @@
+.Timeline {
+
+    &__title {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+
+        &__description {
+            margin-left: 1rem;
+            font-size: 26px;
+        }
+    }
+
+}
