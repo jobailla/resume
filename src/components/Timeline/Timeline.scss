@@ -1,10 +1,14 @@
 @import '../../styles/_settings/variables';
 @import '../../styles/_settings/mixins';
 
+$primary-color: #08c255;
+
 .Timeline {
+
     @include media(tablet) {
         @include box-shadow-container;
     }
+
     &__title {
         display: flex;
         flex-direction: row;
@@ -13,6 +17,82 @@
         &__description {
             margin-left: 1rem;
             font-size: 26px;
+        }
+    }
+
+    &__content {
+        margin-top: 1rem;
+        line-height: 1.4em;
+        list-style: none;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            line-height: inherit;
+        }
+
+        &__item {
+            padding-left: 40px;
+            position: relative;
+
+            &:last-child {
+                padding-bottom: 0;
+            }
+        }
+
+        &__date {
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            margin: 0 0 .5em 0;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
+
+        &__month {
+            padding-right: 1rem;
+        }
+
+        &__description {
+            padding-bottom: 1.5rem;
+        }
+        
+        &__marker {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            width: 20px;
+            
+
+            &:before {
+                background: $primary-color;
+                border: 3px solid transparent;
+                border-radius: 100%;
+                content: "";
+                display: block;
+                height: 15px;
+                position: absolute;
+                top: 4px;
+                left: 0;
+                width: 15px;
+                transition: background 0.3s ease-in-out,
+                    border 0.3s ease-in-out;
+            }
+
+            &-line {
+                content: "";
+                width: 3px;
+                background: #CCD5DB;
+                display: block;
+                position: absolute;
+                top: 24px;
+                bottom: 0;
+                left: 6px;
+            }
         }
     }
 }

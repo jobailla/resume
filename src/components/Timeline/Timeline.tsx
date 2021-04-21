@@ -45,26 +45,35 @@ export default function Timeline(): ReactElement {
                 </div>
 
             </div>
+
             <div className="Timeline__content">
                 {
                     jobs.map((job: Ijob, i: number) => (
                         <article
                             key={`${job.begin.month}-${job.begin.year}_${i}`}
                             className="Timeline__content__item">
+                            <div className="Timeline__content__marker" key={`marker-${i}`} >
+                                {
+                                    i !== jobs.length - 1 ?
+                                        <div className="Timeline__content__marker-line" /> : null
+                                }
+                            </div>
                             <div className="inner">
                                 <span className="Timeline__content__date">
                                     <span className="Timeline__content__month">{job.begin.month}</span>
                                     <span className="Timeline__content__year">{job.begin.year}</span>
                                 </span>
-                                <h2 className="Timeline__content__title">
+                                <div className="Timeline__content__title">
                                     {job.occupation} chez {job.company} <br />
                                     <small className="Timeline__content__title--small">
                                         {job.location}{' '}
                                     </small>
                                     <small className="Timeline__content__title--small timeline__content__title--right">
                                         ({job.duration || 'present'}) </small>
-                                </h2>
-                                <p>{job.description}</p>
+                                </div>
+                                <div className="Timeline__content__description">
+                                    {job.description}
+                                </div>
                             </div>
                         </article>
                     ))
