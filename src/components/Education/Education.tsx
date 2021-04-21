@@ -4,7 +4,6 @@ import { FaUniversity } from 'react-icons/fa'
 import { FlagIcon, FlagIconCode } from 'react-flag-kit'
 import { useStaticQuery, graphql } from "gatsby"
 
-
 export default function Education(): ReactElement {
 
     const data = useStaticQuery(graphql`
@@ -71,25 +70,25 @@ export default function Education(): ReactElement {
                 }
             </div>
             <div className="Education__content ">
-            {
-                languages.map((lang: Ilang, i: number) => (
-                    <ul key={`${lang.code}-${i}`}>
-                        <div className="Education__lang">
-                            {lang.code && (
-                                <FlagIcon
-                                    className="Education__lang__flag"
-                                    code={lang.code}
-                                    size={28}
-                                />
-                            )}
-                            <div
-                                className={lang.code ? '' : 'Education__lang__text--noflag'}>
-                                <strong>{lang.language}:</strong> {lang.level}.
+                {
+                    languages.map((lang: Ilang, i: number) => (
+                        <ul key={`${lang.code}-${i}`}>
+                            <div className="Education__lang">
+                                {lang.code && (
+                                    <FlagIcon
+                                        className="Education__lang__flag"
+                                        code={lang.code}
+                                        size={28}
+                                    />
+                                )}
+                                <div
+                                    className={lang.code ? '' : 'Education__lang__text--noflag'}>
+                                    <strong>{lang.language}:</strong> {lang.level}.
                     </div>
-                        </div>
-                    </ul>
-                ))
-            }
+                            </div>
+                        </ul>
+                    ))
+                }
             </div>
         </div>
     )

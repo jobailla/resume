@@ -2,7 +2,6 @@ import { graphql, useStaticQuery } from "gatsby";
 import * as React from "react";
 import About from '../components/About/About';
 import Avatar from "../components/Avatar";
-import Divider from "../components/Divider";
 import Education from "../components/Education";
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
