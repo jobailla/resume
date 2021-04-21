@@ -22,76 +22,69 @@ $primary-color: #08c255;
 
     &__content {
         margin-top: 1rem;
-        line-height: 1.4em;
-        list-style: none;
-
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6 {
-            line-height: inherit;
-        }
 
         &__item {
-            padding-left: 40px;
-            position: relative;
+            display: grid;
+            grid-template-columns: 5% auto;
+            grid-template-areas: "marker inner";
+        }
 
-            &:last-child {
-                padding-bottom: 0;
-            }
+        &__inner {
+            display: grid;
+            grid-area: inner;
+            grid-template-columns: auto;
+            grid-template-rows: repeat(4, auto);
+            grid-template-areas: "date"
+                                 "title"
+                                 "description";
+            gap: 10px;
+            margin-bottom: 2rem;
         }
 
         &__date {
-            font-size: 12px;
-            font-weight: 700;
+            grid-area: date;
+            font-size: 14px;
+            font-weight: 600;
             letter-spacing: 3px;
-            margin: 0 0 .5em 0;
             text-transform: uppercase;
             white-space: nowrap;
         }
 
-        &__month {
-            padding-right: 1rem;
+        &__year {
+           margin-left: 0.5rem;
+        }
+
+        &__title {
+            grid-area: title;
+            &--small {
+                margin-left: 0.5rem;
+            }
         }
 
         &__description {
-            padding-bottom: 1.5rem;
+            grid-area: description;
         }
         
         &__marker {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            width: 20px;
+            grid-area: marker;
+            margin: auto;
+            width: 100%;
+            height: 100%;
             
-
-            &:before {
+            &-dot {
                 background: $primary-color;
+                margin: auto;
                 border: 3px solid transparent;
                 border-radius: 100%;
-                content: "";
-                display: block;
-                height: 15px;
-                position: absolute;
-                top: 4px;
-                left: 0;
                 width: 15px;
-                transition: background 0.3s ease-in-out,
-                    border 0.3s ease-in-out;
+                height: 15px;
             }
 
             &-line {
-                content: "";
-                width: 3px;
                 background: #CCD5DB;
-                display: block;
-                position: absolute;
-                top: 24px;
-                bottom: 0;
-                left: 6px;
+                margin: auto;
+                width: 5px;
+                height: 100%;
             }
         }
     }

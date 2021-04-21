@@ -49,22 +49,21 @@ export default function Timeline(): ReactElement {
             <div className="Timeline__content">
                 {
                     jobs.map((job: Ijob, i: number) => (
-                        <article
-                            key={`${job.begin.month}-${job.begin.year}_${i}`}
-                            className="Timeline__content__item">
+                        <div className="Timeline__content__item" key={`${job.begin.month}-${job.begin.year}_${i}`} >
                             <div className="Timeline__content__marker" key={`marker-${i}`} >
+                                <div className="Timeline__content__marker-dot" />
                                 {
                                     i !== jobs.length - 1 ?
                                         <div className="Timeline__content__marker-line" /> : null
                                 }
                             </div>
-                            <div className="inner">
+                            <div className="Timeline__content__inner">
                                 <span className="Timeline__content__date">
                                     <span className="Timeline__content__month">{job.begin.month}</span>
                                     <span className="Timeline__content__year">{job.begin.year}</span>
                                 </span>
                                 <div className="Timeline__content__title">
-                                    {job.occupation} chez {job.company} <br />
+                                    {job.occupation} chez {job.company}
                                     <small className="Timeline__content__title--small">
                                         {job.location}{' '}
                                     </small>
@@ -75,7 +74,7 @@ export default function Timeline(): ReactElement {
                                     {job.description}
                                 </div>
                             </div>
-                        </article>
+                        </div>
                     ))
                 }
             </div>
