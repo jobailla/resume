@@ -72,18 +72,17 @@ $primary-color: #08c255;
             height: 100%;
             
             &-dot {
-                background: $primary-color;
-                margin: auto;
-                border: 3px solid transparent;
-                border-radius: 100%;
+                border-radius: 50%;
                 width: 15px;
                 height: 15px;
+                margin: auto;
+                background-color: #08c255;
             }
 
             &-line {
                 background: #CCD5DB;
                 margin: auto;
-                width: 5px;
+                width: 4px;
                 height: 100%;
             }
         }

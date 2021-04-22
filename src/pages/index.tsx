@@ -11,7 +11,6 @@ import Timeline from "../components/Timeline";
 import Wrapper from '../components/Wrapper';
 import "./index.scss";
 
-
 export default function IndexPage(): React.ReactElement {
   const { site } = useStaticQuery(
     graphql`

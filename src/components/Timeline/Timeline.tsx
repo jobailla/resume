@@ -2,27 +2,44 @@ import { graphql, useStaticQuery } from "gatsby";
 import React, { ReactElement } from 'react';
 import './Timeline.scss';
 import { FaSuitcase } from 'react-icons/fa'
+import Img, { FluidObject } from 'gatsby-image';
 
 export default function Timeline(): ReactElement {
-    const { jobsJson } = useStaticQuery(graphql`
+    const { jobsJson, allFile } = useStaticQuery(graphql`
     {
-      jobsJson {
-        jobs {
-          company
-          duration
-          location
-          occupation
-          description
-          begin {
-            month
-            year
-          }
-        }
+  jobsJson {
+    jobs {
+      company
+      duration
+      location
+      occupation
+      description
+      image
+      begin {
+        month
+        year
       }
     }
+  }
+#   allFile(filter: {dir: {regex: "/entreprise/"}}) {
+#     edges {
+#       node {
+#          name
+#          publicURL
+#         childImageSharp {
+#             fluid(maxWidth: 100 quality: 100) {
+#               ...GatsbyImageSharpFluid_tracedSVG
+#             }
+#         }
+#       }
+#     }
+#   }
+}
+
   `)
 
     const { jobs } = jobsJson
+
 
     interface Ijob {
         company: string;
@@ -34,7 +51,22 @@ export default function Timeline(): ReactElement {
         location: string;
         occupation: string;
         description: string;
+        image: string;
     }
+
+    // const logos = allFile.edges
+    
+    // const style = {
+    //   width: "65px",
+    //   height: "65px",
+    //   borderRadius: "100%",
+    // };
+
+    // const findLogo = (images: string[], imageName: string): FluidObject => {
+    //     const img = images.find((img) => img.node.name === imageName)
+    //     return (img?.node.childImageSharp.fluid)
+    // }
+
 
     return (
         <div className="Timeline">
@@ -51,7 +83,9 @@ export default function Timeline(): ReactElement {
                     jobs.map((job: Ijob, i: number) => (
                         <div className="Timeline__content__item" key={`${job.begin.month}-${job.begin.year}_${i}`} >
                             <div className="Timeline__content__marker" key={`marker-${i}`} >
-                                <div className="Timeline__content__marker-dot" />
+                                <div className="Timeline__content__marker-dot" >
+                                    {/* <Img  fluid={findLogo(logos, jobs[i].image)} style={style}/> */}
+                                    </div>
                                 {
                                     i !== jobs.length - 1 ?
                                         <div className="Timeline__content__marker-line" /> : null
