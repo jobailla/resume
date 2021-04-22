@@ -97,7 +97,9 @@ export default function Timeline(): ReactElement {
                                     <span className="Timeline__content__year">{job.begin.year}</span>
                                 </span>
                                 <div className="Timeline__content__title">
-                                    {job.occupation} chez {job.company}
+                                    <div className="Timeline__content__title--big">
+                                        {job.occupation} chez {job.company}
+                                    </div>
                                     <small className="Timeline__content__title--small">
                                         {job.location}{' '}
                                     </small>

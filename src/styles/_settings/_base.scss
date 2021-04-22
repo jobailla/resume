@@ -5,6 +5,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  background: $app-theme-color-dark;
 
   @include media(desktop) {
     font-size: 72.5%;
@@ -12,8 +13,7 @@ html {
 }
 
 body {
-  background-color: $off-white;
   font-family: 'Lato', sans-serif;
   font-size: 1.4rem;
-  background-color: $app-backgroud-color;
+  background-color: $app-theme-color-dark;
 }

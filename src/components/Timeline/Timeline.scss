@@ -1,13 +1,7 @@
 @import '../../styles/_settings/variables';
 @import '../../styles/_settings/mixins';
 
-$primary-color: #08c255;
-
 .Timeline {
-
-    @include media(tablet) {
-        @include box-shadow-container;
-    }
 
     &__title {
         display: flex;
@@ -35,10 +29,11 @@ $primary-color: #08c255;
             grid-template-columns: auto;
             grid-template-rows: repeat(4, auto);
             grid-template-areas: "date"
-                                 "title"
-                                 "description";
+                "title"
+                "description";
             gap: 10px;
-            margin-bottom: 2rem;
+            margin: 1rem;
+            @include box-shadow-container;
         }
 
         &__date {
@@ -51,32 +46,37 @@ $primary-color: #08c255;
         }
 
         &__year {
-           margin-left: 0.5rem;
+            margin-left: 0.5rem;
         }
 
         &__title {
             grid-area: title;
+
+            &--big {
+                text-decoration: underline;
+            }
+
             &--small {
-                margin-left: 0.5rem;
+                align-content: right;
             }
         }
 
         &__description {
             grid-area: description;
         }
-        
+
         &__marker {
             grid-area: marker;
-            margin: auto;
+            margin: 3rem auto;
             width: 100%;
             height: 100%;
-            
+
             &-dot {
+                background-color: $line-dot-color;
                 border-radius: 50%;
                 width: 15px;
                 height: 15px;
                 margin: auto;
-                background-color: #08c255;
             }
 
             &-line {
