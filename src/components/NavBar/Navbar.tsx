@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Burger from '../Burger'
 import './NavBar.scss'
 import { useStaticQuery, graphql } from 'gatsby'
+import { Link } from "react-scroll";
 
 export default function Navbar(): React.ReactElement {
     const { headerJson } = useStaticQuery(
@@ -29,11 +30,16 @@ export default function Navbar(): React.ReactElement {
                 </div>
                 <div className={`navBar__link__group${toggled ? "__toggled" : ""}`}>
                     {headerLinks.map((headerLink: { label: string; url: string; }, i: number) => (
-                        <div className="navBar__link"
+                        <Link className="navBar__link"
                             key={`header-link-${i}`}
-                            onClick={() => setToggled(false)}>
+                            onClick={() => setToggled(false)}
+                            to={headerLink.url}
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={100} >
                             {headerLink.label}
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>

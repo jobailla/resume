@@ -2,7 +2,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: `Jonathan Baillais resume`,
+    title: `Jonathan Baillais Resume`,
     name: `Jonathan Baillais`,
     image: `./pages/images/avatar.jpg`,
     description: `Jonathan Baillais resume`,
