@@ -1,12 +1,24 @@
 // Colors
-$app-backgroud-color: #fff;
-$app-theme-color: #28283c;
-$app-theme-color-dark: #292D32;
-$black: #000000;
+
+$black: #000;
+$white: #FFF;
+
+
+$green: #0ACF83;
+$blue: #1E5C83;
+
+$app-theme-color: #0B0E13;
+$app-backgroud-color: #151B24;
+
+$navbar-color: $blue;
+$section-title-color: $blue;
+
 $off-white: #ECF0F3;
-$white: #ffffff;
-$burger-color: #fff;
-$line-dot-color: #08c255;
+$burger-color: $white;
+
+$topbar-color: $green;
+$name-color: $green;
+$line-dot-color: $green;
 
 // Font size
 $font-size-desktop: 16px;
@@ -15,7 +27,10 @@ $font-size-section-title-desktop: 26px;
 $font-size-section-title-mobile: 24px;
 $font-size-education-school-desktop: 20px;
 $font-size-education-school-mobile: 14px;
+$font-size-name-desktop: 42px;
+$font-size-name-phone: 26px;
+
 
 // Icons size
-$social-icon-full: 35px;
+$social-icon-full: 55px;
 $social-icon-min: 35px;

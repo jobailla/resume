@@ -6,10 +6,15 @@
     &__title {
         display: flex;
         flex-direction: row;
+        color: $section-title-color;
 
         &__description {
             margin-left: 1rem;
-            font-size: 26px;
+            font-size: $font-size-section-title-desktop;
+
+            @include media(phone) {
+                font-size: $font-size-section-title-mobile;
+            }
         }
     }
 
@@ -21,7 +26,6 @@
         display: flex;
         flex-direction: column;
         margin: 2rem 0rem;
-        @include box-shadow-container;
 
 
         &-header {
@@ -33,8 +37,9 @@
         &-school {
             font-weight: bold;
             text-transform: uppercase;
-            margin-bottom: 0.2rem;
+            margin-bottom: 0.5rem;
             font-size: $font-size-education-school-desktop;
+            font-weight: 500;
 
             @include media(phone) {
                 font-size: $font-size-education-school-mobile;
@@ -42,14 +47,14 @@
         }
 
         &-date {
-            color: #666;
+            color: $green;
             font-size: 1rem;
         }
 
         &-studies {
             margin-left: 1rem;
-            font-style: italic;
             font-size: $font-size-desktop;
+            font-weight: 300;
 
             @include media(phone) {
                 font-size: $font-size-mobile;
@@ -69,6 +74,7 @@
         &__text {
             &--noflag {
                 margin-left: 2rem;
+                font-weight: 300;
             }
         }
     }

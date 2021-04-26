@@ -1,7 +1,6 @@
 @import '../../styles/_settings/variables';
 @import '../../styles/_settings/mixins';
 
-
 .wrapper {
   display: flex;
   max-height: $social-icon-full;
@@ -19,7 +18,7 @@
     max-width: $social-icon-full;
     overflow: hidden;
     transition: max-width 0.3s ease-out;
-    margin: 0 5px;
+    margin: 0 0.5rem;
     background: $off-white;
     border-radius: 50px;
     cursor: pointer;
@@ -66,7 +65,7 @@
         }
 
         .grey {
-          background: #333
+          background: #333;
         }
 
         .red {
@@ -87,7 +86,6 @@
   .icon {
     display: flex;
     justify-content: center;
-    align-items: center;
     height: $social-icon-full;
     width: $social-icon-full;
     line-height: $social-icon-full;

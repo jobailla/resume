@@ -45,15 +45,15 @@ export default function IndexPage(): React.ReactElement {
                   <SocialLinks />
                 </div>
               </div>
+              <div className="stack">
+                <Stack />
+              </div>
               <div className="about">
                 <About />
               </div>
             </div>
 
             <div className="cursus">
-              <div className="stack">
-                <Stack />
-              </div>
 
               <div className="education">
                 <Education />

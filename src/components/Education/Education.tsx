@@ -57,13 +57,13 @@ export default function Education(): ReactElement {
                             <div className="Education__edu">
                                 <div className="Education__edu-header">
                                     <span className="Education__edu-school">{edu.school}</span>
-                                    <span className="Education__edu-date">
+                                    <div className="Education__edu-date">
                                         {edu.startYear} - {edu.endYear || 'Present'}
-                                    </span>
+                                    </div>
                                 </div>
-                                <span className="Education__edu-studies">
+                                <div className="Education__edu-studies">
                                     {edu.field}
-                                </span>
+                                </div>
                             </div>
                         </div>
                     ))
@@ -83,7 +83,7 @@ export default function Education(): ReactElement {
                                 )}
                                 <div
                                     className={lang.code ? '' : 'Education__lang__text--noflag'}>
-                                    <strong>{lang.language}:</strong> {lang.level}.
+                                    <span>{lang.language}:</span> {lang.level}.
                     </div>
                             </div>
                         </ul>

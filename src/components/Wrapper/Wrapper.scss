@@ -5,14 +5,16 @@
     position: relative;
     border-radius: 3px;
     width: 85%;
+    height: 100%;
+    padding-bottom: 6rem;
+    padding: 2.5rem;
     max-width: 1400px;
-    border-bottom: 1px solid $off-white;
+    border-bottom: 1px solid $green;
     word-wrap: break-word;
     margin: 0px auto 30px auto;
-    padding: 2.5rem;
     box-shadow: 0 0 0 0, 0 6px 12px rgba(0, 0, 0, 0.1);
     min-height: 280px;
-    background-color: $white;
+    background-color: $app-backgroud-color;
 
     @include media(laptop) {
         padding: 1.5rem;
