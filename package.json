@@ -12,11 +12,11 @@
     "type-coverage": "type-coverage"
   },
   "dependencies": {
-    "@babel/core": "^7.13.15",
+    "@babel/core": "^7.13.16",
     "@types/react-helmet": "^6.1.1",
     "@types/react-icons": "^3.0.0",
     "@types/react-scroll": "^1.8.2",
-    "eslint": "^7.24.0",
+    "eslint": "^7.25.0",
     "eslint-config-prettier": "^8.2.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.23.2",
@@ -26,7 +26,7 @@
     "gatsby-plugin-eslint": "^3.0.0",
     "gatsby-plugin-load-script": "^1.1.0",
     "gatsby-plugin-sass": "^2.1.3",
-    "gatsby-plugin-sharp": "^3.3.0",
+    "gatsby-plugin-sharp": "^3.3.1",
     "gatsby-plugin-typescript": "^2.1.2",
     "gatsby-source-filesystem": "^3.3.0",
     "gatsby-transformer-json": "^3.1.0",
@@ -39,9 +39,9 @@
     "react-flag-kit": "^0.3.1",
     "react-helmet": "^6.1.0",
     "react-scroll": "^1.8.2",
-    "type-coverage": "^2.17.2",
+    "type-coverage": "^2.17.3",
     "typescript": "^4.2.3",
-    "webpack": "^5.33.2"
+    "webpack": "^5.35.1"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.18.0",
