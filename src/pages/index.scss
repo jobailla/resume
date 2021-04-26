@@ -54,7 +54,7 @@
     grid-area: intro;
     display: grid;
     grid-template-columns: 33% auto;
-    gap: 3%;
+    gap: 5%;
     grid-template-areas: "social social"
         "stack about";
 
@@ -72,7 +72,6 @@
     grid-template-areas: "education";
 
     @include media(tablet) {
-        gap: 2rem;
         grid-template-columns: auto;
         grid-template-areas: "stack"
             "aducation";
