@@ -72,7 +72,7 @@ export default function Education(): ReactElement {
             <div className="Education__content ">
                 {
                     languages.map((lang: Ilang, i: number) => (
-                        <ul key={`${lang.code}-${i}`}>
+                        <li key={`${lang.code}-${i}`}>
                             <div className="Education__lang">
                                 {lang.code && (
                                     <FlagIcon
@@ -86,7 +86,7 @@ export default function Education(): ReactElement {
                                     <span>{lang.language}:</span> {lang.level}.
                     </div>
                             </div>
-                        </ul>
+                        </li>
                     ))
                 }
             </div>
