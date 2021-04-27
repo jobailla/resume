@@ -1,8 +1,17 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import './Burger.scss';
 
-export default function Burger(): React.ReactElement {
+interface Props {
+    toggled: boolean
+}
+
+export default function Burger({ toggled }: Props): React.ReactElement {
     const [status, setStatus] = useState('close');
+
+    useEffect(() => {
+        setStatus(toggled ? 'open' : 'close')
+    })
+
     return (
         <div className="BurgerMenu__container"
             role="button" aria-label="burger button"

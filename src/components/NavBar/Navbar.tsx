@@ -26,7 +26,7 @@ export default function Navbar(): React.ReactElement {
             <div className="navBar__header">
                 <div className="navBar__header__menuIcon"
                     onClick={() => setToggled(!toggled)} >
-                    <Burger />
+                    <Burger toggled={toggled} />
                 </div>
                 <div className={`navBar__link__group${toggled ? "__toggled" : ""}`}>
                     {headerLinks.map((headerLink: { label: string; url: string; }, i: number) => (
