@@ -11,7 +11,7 @@
     justify-items: center;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 1.5rem;
 
     @include media(laptop) {
       grid-template-columns: repeat(6, $icon-size);
@@ -29,6 +29,7 @@
     @include media(phoneSmall) {
       grid-template-columns: repeat(5, $icon-size);
       margin-bottom: $icon-size * 2;
+      gap: 1rem;
     }
   }
 

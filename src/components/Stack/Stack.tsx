@@ -17,7 +17,7 @@ export default function Stack(): React.ReactElement {
               name
               publicURL
               childImageSharp {
-                fluid(maxWidth: 50, quality: 100) {
+                fluid(maxWidth: 50, quality: 75) {
                   ...GatsbyImageSharpFluid_tracedSVG
                 }
               }
