@@ -94,8 +94,9 @@ export default function SEO({ description, keywords, title, image, url, author }
                                 name: `keywords`,
                                 content: metaKeywords.join(`, `),
                             } : []
-                        )}
-                    />
+                        )}>
+                        <html lang="fr" />
+                    </Helmet>
 
                 )
 

@@ -17,7 +17,7 @@
         "intro"
         "cursus"
         "timeline";
-    gap: 6rem;
+    gap: 3rem;
 }
 
 .social {
@@ -55,6 +55,7 @@
     display: grid;
     grid-template-columns: 33% auto;
     grid-template-rows: repeat(2, auto);
+    gap: 2rem;
     grid-template-areas: "social social"
         "stack about";
 
