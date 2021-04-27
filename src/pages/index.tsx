@@ -28,41 +28,43 @@ export default function IndexPage(): React.ReactElement {
 
   const { title, keywords, author } = site.siteMetadata
   return (
-    <Layout>
-      <header>
-        <SEO title={title} keywords={keywords} />
-      </header>
-      <Wrapper>
-        <main className="page-content">
-          <section className="introduction">
-            <div className="social" >
-              <div className="avatar">
-                <Avatar altText="avatar" title="avatar" />
+    <main className="resume">
+      <Layout>
+        <header>
+          <SEO title={title} keywords={keywords} />
+        </header>
+        <Wrapper>
+          <div className="page-content">
+            <section className="introduction">
+              <div className="social" >
+                <div className="avatar">
+                  <Avatar altText="avatar" title="avatar" />
+                </div>
+                <div className="nameTitle">
+                  {author}
+                </div>
+                <div className="links">
+                  <SocialLinks />
+                </div>
               </div>
-              <div className="nameTitle">
-                {author}
+              <div className="stack">
+                <Stack />
               </div>
-              <div className="links">
-                <SocialLinks />
+              <div className="about">
+                <About />
               </div>
-            </div>
-            <div className="stack">
-              <Stack />
-            </div>
-            <div className="about">
-              <About />
-            </div>
-          </section>
-          <section className="cursus">
-            <div className="education">
-              <Education />
-            </div>
-          </section>
-          <section className="timeline">
-            <Timeline />
-          </section>
-        </main>
-      </Wrapper>
-    </Layout>
+            </section>
+            <section className="cursus">
+              <div className="education">
+                <Education />
+              </div>
+            </section>
+            <section className="timeline">
+              <Timeline />
+            </section>
+          </div>
+        </Wrapper>
+      </Layout>
+    </main>
   );
 }
