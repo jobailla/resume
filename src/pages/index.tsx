@@ -28,43 +28,41 @@ export default function IndexPage(): React.ReactElement {
 
   const { title, keywords, author } = site.siteMetadata
   return (
-    <div className="resume">
-      <Layout>
+    <Layout>
+      <header>
         <SEO title={title} keywords={keywords} />
-        <Wrapper>
-          <div className="page-content">
-            <div className="introduction">
-              <div className="social" >
-                <div className="avatar">
-                  <Avatar altText="avatar" title="avatar" />
-                </div>
-                <div className="nameTitle">
-                  {author}
-                </div>
-                <div className="links">
-                  <SocialLinks />
-                </div>
+      </header>
+      <Wrapper>
+        <main className="page-content">
+          <section className="introduction">
+            <div className="social" >
+              <div className="avatar">
+                <Avatar altText="avatar" title="avatar" />
               </div>
-              <div className="stack">
-                <Stack />
+              <div className="nameTitle">
+                {author}
               </div>
-              <div className="about">
-                <About />
+              <div className="links">
+                <SocialLinks />
               </div>
             </div>
-
-            <div className="cursus">
-
-              <div className="education">
-                <Education />
-              </div>
+            <div className="stack">
+              <Stack />
             </div>
-            <div className="timeline">
-              <Timeline />
+            <div className="about">
+              <About />
             </div>
-          </div>
-        </Wrapper>
-      </Layout>
-    </div>
+          </section>
+          <section className="cursus">
+            <div className="education">
+              <Education />
+            </div>
+          </section>
+          <section className="timeline">
+            <Timeline />
+          </section>
+        </main>
+      </Wrapper>
+    </Layout>
   );
 }
