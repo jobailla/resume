@@ -65,5 +65,19 @@ module.exports = {
         plugins: [],
       },
     },
+    // Manifest
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Jonathan Baillais Resume`,
+        short_name: `Jonathan Baillais`,
+        start_url: `www.jonathan-baillais.fr`,
+        background_color: `#0E0913`,
+        theme_color: `#1B2029`,
+        icon: `./src/pages/images/avatar.jpg`,
+        display: 'minimal-ui',
+        purpose: `maskable`,
+      }
+    }
   ],
 }
