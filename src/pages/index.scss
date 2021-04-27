@@ -54,7 +54,7 @@
     grid-area: intro;
     display: grid;
     grid-template-columns: 33% auto;
-    gap: 5%;
+    grid-template-rows: repeat(2, auto);
     grid-template-areas: "social social"
         "stack about";
 
