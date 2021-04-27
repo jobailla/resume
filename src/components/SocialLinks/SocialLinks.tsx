@@ -1,5 +1,5 @@
 import { graphql, useStaticQuery } from "gatsby";
-import React from 'react';
+import React, { useEffect } from 'react';
 import './SocialLinks.scss';
 
 export default function SocialLinks(): React.ReactElement {
@@ -25,7 +25,24 @@ export default function SocialLinks(): React.ReactElement {
         color: string;
     }
 
-    const  { socialLinks } = socialJson;
+    const { socialLinks } = socialJson;
+
+    const addScript = (url: string) => {
+        const script = document.createElement("script")
+        script.src = url
+        script.async = true
+        document.body.appendChild(script)
+    }
+
+    const onClientEntry = () => {
+        addScript("https://kit.fontawesome.com/a076d05399.js")
+    }
+
+
+    useEffect(() => {
+        onClientEntry();
+    }, []);
+
     return (
         <div className="wrapper">
             {socialLinks.map((social: Isocial, i: number) => (

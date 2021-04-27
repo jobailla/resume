@@ -1,7 +1,6 @@
 import { graphql, useStaticQuery } from 'gatsby';
 import React from 'react';
 import { FaUserAlt } from 'react-icons/fa';
-import SEO from '../SEO';
 import './About.scss';
 
 export default function About(): React.ReactElement {
