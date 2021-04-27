@@ -3,21 +3,7 @@
 
 .Education {
 
-
-    &__title {
-        display: flex;
-        flex-direction: row;
-        color: $section-title-color;
-
-        &__description {
-            margin-left: 1rem;
-            font-size: $font-size-section-title-desktop;
-
-            @include media(phone) {
-                font-size: $font-size-section-title-mobile;
-            }
-        }
-    }
+   @include section-property; 
 
     &__content {
         margin-top: 1rem;

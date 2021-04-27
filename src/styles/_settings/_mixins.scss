@@ -30,10 +30,19 @@
   }
 }
 
-@mixin box-shadow-container {
-  padding: 1rem;
-  background: #E3E6EC;
-  box-shadow: 18px 18px 20px #D1D9E6,
-    -18px -18px 20px #FFFFFF;
-  border-radius: 30px;
+@mixin section-property {
+  &__title {
+    display: flex;
+    flex-direction: row;
+    color: $section-title-color;
+
+    &__description {
+      margin-left: 1rem;
+      font-size: $font-size-section-title-desktop;
+
+      @include media(phone) {
+        font-size: $font-size-section-title-mobile;
+      }
+    }
+  }
 }
