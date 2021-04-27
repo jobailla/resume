@@ -20,16 +20,16 @@ export default function NotFound(): React.ReactElement {
     );
 
     return (
-        <Layout>
-            <div className="notFound">
-                <SEO title="Page Not Found" />
-                <Wrapper>
+        <div className="notFound">
+            <SEO title="Page Not Found" />
+            <Wrapper>
+                <div className="notFound__content">
                     <div className="notFound__mainTitle">
                         {markdownRemark.frontmatter.description}
                     </div>
                     <div className="notFound__text" dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
-                </Wrapper>
-            </div>
-        </Layout >
+                </div>
+            </Wrapper>
+        </div>
     )
 }
