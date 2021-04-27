@@ -1,14 +1,14 @@
 import { graphql, useStaticQuery } from "gatsby";
 import * as React from "react";
-import About from '../components/About/About';
+import About from "../components/About/About";
 import Avatar from "../components/Avatar";
 import Education from "../components/Education";
-import Layout from '../components/Layout';
-import SEO from '../components/SEO';
+import Layout from "../components/Layout";
+import SEO from "../components/SEO";
 import SocialLinks from "../components/SocialLinks";
 import Stack from "../components/Stack";
 import Timeline from "../components/Timeline";
-import Wrapper from '../components/Wrapper';
+import Wrapper from "../components/Wrapper";
 import "./index.scss";
 
 export default function IndexPage(): React.ReactElement {
@@ -20,13 +20,13 @@ export default function IndexPage(): React.ReactElement {
             title
             keywords
             author
+          }
         }
       }
-    }
     `
   );
 
-  const { title, keywords, author } = site.siteMetadata
+  const { title, keywords, author } = site.siteMetadata;
   return (
     <main className="resume">
       <Layout>
@@ -36,13 +36,11 @@ export default function IndexPage(): React.ReactElement {
         <Wrapper>
           <div className="page-content">
             <section className="introduction">
-              <div className="social" >
+              <div className="social">
                 <div className="avatar">
                   <Avatar altText="avatar" title="avatar" />
                 </div>
-                <div className="nameTitle">
-                  {author}
-                </div>
+                <div className="nameTitle">{author}</div>
                 <div className="links">
                   <SocialLinks />
                 </div>

@@ -1,16 +1,16 @@
 {
-    "headerLinks": [
-        {
-            "label": "À propos",
-            "url": "about"
-        },
-        {
-            "label": "Études",
-            "url": "education"
-        },
-        {
-            "label": "Expérience",
-            "url": "timeline"
-        }
-    ]
+  "headerLinks": [
+    {
+      "label": "À propos",
+      "url": "about"
+    },
+    {
+      "label": "Études",
+      "url": "education"
+    },
+    {
+      "label": "Expérience",
+      "url": "timeline"
+    }
+  ]
 }

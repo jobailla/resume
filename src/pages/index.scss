@@ -1,83 +1,86 @@
-@import '../styles/_settings/reset';
-@import '../styles/_settings/variables';
-@import '../styles/_settings/mixins';
-@import '../styles/_settings/base';
+@import "../styles/_settings/reset";
+@import "../styles/_settings/variables";
+@import "../styles/_settings/mixins";
+@import "../styles/_settings/base";
 
 .resume {
-    height: 100vh;
+  height: 100vh;
 }
 
 .page-content {
-    margin-top: 7rem;
-    display: grid;
-    grid-template-rows: repeat(3, auto);
-    grid-template-columns: 1fr;
-    grid-template-areas:
-        "intro"
-        "cursus"
-        "timeline";
-    gap: 3rem;
+  margin-top: 7rem;
+  display: grid;
+  grid-template-rows: repeat(3, auto);
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "intro"
+    "cursus"
+    "timeline";
+  gap: 3rem;
 }
 
 .social {
-    grid-area: social;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-areas: "avatar""name""links";
+  grid-area: social;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "avatar" "name" "links";
 }
 
 .avatar {
-    grid-area: avatar;
-    margin: auto;
-    border-radius: 50%;
-    box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.1);
+  grid-area: avatar;
+  margin: auto;
+  border-radius: 50%;
+  box-shadow: 0px 25px 25px rgba(0, 0, 0, 0.1);
 }
 
 .nameTitle {
-    grid-area: name;
-    margin: 1rem auto;
-    color: $name-color;
-    font-family: Ubuntu;
-    font-size: $font-size-name-desktop;
+  grid-area: name;
+  margin: 1rem auto;
+  color: $name-color;
+  font-family: Ubuntu;
+  font-size: $font-size-name-desktop;
 
-    @include media(phone) {
-        font-size: $font-size-name-phone;
-    }
+  @include media(phone) {
+    font-size: $font-size-name-phone;
+  }
 }
 
 .links {
-    margin: auto;
+  margin: auto;
 }
 
 .introduction {
-    grid-area: intro;
-    display: grid;
-    grid-template-columns: 33% auto;
-    grid-template-rows: repeat(2, auto);
-    gap: 2rem;
-    grid-template-areas: "social social"
-        "stack about";
+  grid-area: intro;
+  display: grid;
+  grid-template-columns: 33% auto;
+  grid-template-rows: repeat(2, auto);
+  gap: 2rem;
+  grid-template-areas:
+    "social social"
+    "stack about";
 
-    @include media(tablet) {
-        grid-template-columns: auto;
-        grid-template-areas: "social"
-            "about";
-    }
+  @include media(tablet) {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "social"
+      "about";
+  }
 }
 
 .cursus {
-    display: grid;
-    grid-template-columns: auto;
-    gap: 1%;
-    grid-template-areas: "education";
+  display: grid;
+  grid-template-columns: auto;
+  gap: 1%;
+  grid-template-areas: "education";
 
-    @include media(tablet) {
-        grid-template-columns: auto;
-        grid-template-areas: "stack"
-            "aducation";
-    }
+  @include media(tablet) {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "stack"
+      "aducation";
+  }
 }
 
 .timeline {
-    grid-area: timeline;
+  grid-area: timeline;
 }

@@ -1,49 +1,46 @@
-@import '../../styles/_settings/variables';
-@import '../../styles/_settings/mixins';
-
+@import "../../styles/_settings/variables";
+@import "../../styles/_settings/mixins";
 
 .Stack {
+  @include section-property;
 
-    @include section-property;
+  &__images {
+    display: grid;
+    grid-template-columns: repeat(7, $icon-size);
+    margin-top: 1rem;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 
-    &__images {
-        display: grid;
-        grid-template-columns: repeat(7, $icon-size);
-        margin-top: 1rem;
-        justify-items: center;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-
-        @include media(laptop) {
-            grid-template-columns: repeat(6, $icon-size);
-        }
-
-        @include media(tablet) {
-            grid-template-columns: repeat(7, $icon-size);
-            margin-bottom: $icon-size;
-        }
-
-        @include media(phone) {
-            grid-template-columns: repeat(5, $icon-size);
-        }
-
-        @include media(phoneSmall) {
-            grid-template-columns: repeat(5, $icon-size);
-            margin-bottom: $icon-size * 2;
-        }
+    @include media(laptop) {
+      grid-template-columns: repeat(6, $icon-size);
     }
 
-    .logo {
-        width: $icon-size;
-
-        @include media(phone) {
-            width: $icon-size;
-        }
-
-        @include media(phoneSmall) {
-            width: $icon-size - 5px;
-        }
-
+    @include media(tablet) {
+      grid-template-columns: repeat(7, $icon-size);
+      margin-bottom: $icon-size;
     }
+
+    @include media(phone) {
+      grid-template-columns: repeat(5, $icon-size);
+    }
+
+    @include media(phoneSmall) {
+      grid-template-columns: repeat(5, $icon-size);
+      margin-bottom: $icon-size * 2;
+    }
+  }
+
+  .logo {
+    width: $icon-size;
+
+    @include media(phone) {
+      width: $icon-size;
+    }
+
+    @include media(phoneSmall) {
+      width: $icon-size - 5px;
+    }
+  }
 }

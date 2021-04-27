@@ -1,12 +1,12 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React from 'react';
-import Navbar from '../NavBar';
+import React from "react";
+import Navbar from "../NavBar";
 
 export default function Layout({ children }: any): React.ReactElement {
-    return (
-        <div>
-            <Navbar />
-            {children}
-        </div>
-    )
+  return (
+    <div>
+      <Navbar />
+      {children}
+    </div>
+  );
 }

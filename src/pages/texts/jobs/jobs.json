@@ -1,65 +1,64 @@
 {
-    "jobs": [
-        {
-            "company": "Matrice",
-            "begin": {
-                "month": "Juillet",
-                "year": "2019"
-            },
-            "duration": "6 mois",
-            "location": "Paris",
-            "occupation": "Stage",
-            "description": "Développement d'objets connectés, implémentation d'appareils numériques et de scripts, développement et support de plateformes web. Electronique avec Raspberry Pi, Art numérique : Création d'un hologramme interactif pour le \"Château du Clos de Vougeot\" et pour les conférences de l'Armée Française.",
-            "image": "matrice"
-        },
-        {
-            "company": "Matrice",
-            "begin": {
-                "month": "Juillet",
-                "year": "2018"
-            },
-            "duration": "1 an",
-            "location": "Paris",
-            "occupation": "Entreprenariat",
-            "description": "Co-créateur du premier laboratoire de recherche en Art Numérique au sein de Matrice. Le but des laboratoires de recherche est de réunir des équipes pluridisciplinaires autour de projets de développement technologique, de recherche, d’expérimentation et d’innovation.",
-            "image": "matrice"
-        },
-        {
-            "company": "Level Informatique",
-            "begin": {
-                "month": "Décembre",
-                "year": "2013"
-            },
-            "duration": "3 mois",
-            "location": "Varennes-Jarcy",
-            "occupation": "Stage",
-            "description": "Stage avec un développeur web indépendant. support et développement d'applications web en Ruby on rails.",
-            "image": "levelInformatique"
-
-        },
-        {
-            "company": "KBS",
-            "begin": {
-                "month": "Février",
-                "year": "2012"
-            },
-            "duration": "3 mois",
-            "location": "Moissy-Cramayel",
-            "occupation": "Stage",
-            "description": "Conception de capteurs électroniques divers, Ingénierie / Bureau d’études. Usinage de capteurs, soudure de circuits imprimés.",
-            "image": "KBS"
-        },
-        {
-            "company": "STARWARE MICRO SERVICES",
-            "begin": {
-                "month": "Mai",
-                "year": "2011"
-            },
-            "duration": "2 mois",
-            "location": "Saint-Michel-sur-Orge",
-            "occupation": "Stage",
-            "description": "Magasin de Maintenance Informatique, Service Informatique. Suivi physique et Informatique des stocks, Mise à jour du fichier clients. Maintenance Informatique Software/Hardware. Maintenance à domicile.",
-            "image": "starware"
-        }
-    ]
+  "jobs": [
+    {
+      "company": "Matrice",
+      "begin": {
+        "month": "Juillet",
+        "year": "2019"
+      },
+      "duration": "6 mois",
+      "location": "Paris",
+      "occupation": "Stage",
+      "description": "Développement d'objets connectés, implémentation d'appareils numériques et de scripts, développement et support de plateformes web. Electronique avec Raspberry Pi, Art numérique : Création d'un hologramme interactif pour le \"Château du Clos de Vougeot\" et pour les conférences de l'Armée Française.",
+      "image": "matrice"
+    },
+    {
+      "company": "Matrice",
+      "begin": {
+        "month": "Juillet",
+        "year": "2018"
+      },
+      "duration": "1 an",
+      "location": "Paris",
+      "occupation": "Entreprenariat",
+      "description": "Co-créateur du premier laboratoire de recherche en Art Numérique au sein de Matrice. Le but des laboratoires de recherche est de réunir des équipes pluridisciplinaires autour de projets de développement technologique, de recherche, d’expérimentation et d’innovation.",
+      "image": "matrice"
+    },
+    {
+      "company": "Level Informatique",
+      "begin": {
+        "month": "Décembre",
+        "year": "2013"
+      },
+      "duration": "3 mois",
+      "location": "Varennes-Jarcy",
+      "occupation": "Stage",
+      "description": "Stage avec un développeur web indépendant. support et développement d'applications web en Ruby on rails.",
+      "image": "levelInformatique"
+    },
+    {
+      "company": "KBS",
+      "begin": {
+        "month": "Février",
+        "year": "2012"
+      },
+      "duration": "3 mois",
+      "location": "Moissy-Cramayel",
+      "occupation": "Stage",
+      "description": "Conception de capteurs électroniques divers, Ingénierie / Bureau d’études. Usinage de capteurs, soudure de circuits imprimés.",
+      "image": "KBS"
+    },
+    {
+      "company": "STARWARE MICRO SERVICES",
+      "begin": {
+        "month": "Mai",
+        "year": "2011"
+      },
+      "duration": "2 mois",
+      "location": "Saint-Michel-sur-Orge",
+      "occupation": "Stage",
+      "description": "Magasin de Maintenance Informatique, Service Informatique. Suivi physique et Informatique des stocks, Mise à jour du fichier clients. Maintenance Informatique Software/Hardware. Maintenance à domicile.",
+      "image": "starware"
+    }
+  ]
 }

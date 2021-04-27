@@ -2,7 +2,11 @@ import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
 import Img from "gatsby-image";
 
-export default function Avatar(props: { url?: string; altText: string; title: string }): React.ReactElement {
+export default function Avatar(props: {
+  url?: string;
+  altText: string;
+  title: string;
+}): React.ReactElement {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: file(relativePath: { eq: "avatar.jpg" }) {
@@ -32,7 +36,7 @@ export default function Avatar(props: { url?: string; altText: string; title: st
       fluid={data.placeholderImage.childImageSharp.fluid}
       alt={altText}
       title={title}
-      backgroundColor={'#1E5C83'}
+      backgroundColor={"#1E5C83"}
     />
   );
 }

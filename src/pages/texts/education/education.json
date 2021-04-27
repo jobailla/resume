@@ -1,36 +1,36 @@
 {
-    "education": [
-        {
-            "school": "42, Architecte en technologie numérique",
-            "field": "42 est la première formation en informatique entièrement gratuite, ouverte à toutes et à tous sans condition de diplôme et accessible dès 18 ans. Sa pédagogie est basée sur le peer-to-peer learning : un fonctionnement participatif, sans cours, sans professeur, qui permet aux étudiant(e)s de libérer toute leur créativité grâce à l’apprentissage par projets. 42 a été fondée à l’initiative de Xavier Niel.",
-            "startYear": "2016",
-            "endYear": "2020"
-        },
-        {
-            "school": "Lycée Dorian, BTS Systèmes Électroniques",
-            "degree": "BTS Systèmes électroniques",
-            "field": "Le BTS Systèmes Électroniques est une formation qui a pour objectif de former des spécialistes des technologies électroniques. Les titulaires ont les compétences pour concevoir, fabriquer des dispositifs électroniques et d\"en assurer la maintenance.",
-            "startYear": "2013",
-            "endYear": "2015"
-        },
-        {
-            "school": "Lycée Jacques Prévert, BAC  Systèmes Électroniques et Numériques",
-            "degree": "BAC  Electronic and Digital System",
-            "field": "Le BAC SEN a pour but de former des techniciens capables d’intervenir sur les équipements et les installations électroniques ou numériques, que ce soit pour un particulier, un professionnel ou dans le milieu industriel.",
-            "startYear": "2009",
-            "endYear": "2013"
-        }
-    ],
-      "languages": [
-        {
-            "language": "Français",
-            "level": "Langue maternelle",
-            "code": "FR"
-        },
-        {
-            "language": "Anglais",
-            "level": "Intermédiaire",
-            "code": "GB"
-        }
-    ]
+  "education": [
+    {
+      "school": "42, Architecte en technologie numérique",
+      "field": "42 est la première formation en informatique entièrement gratuite, ouverte à toutes et à tous sans condition de diplôme et accessible dès 18 ans. Sa pédagogie est basée sur le peer-to-peer learning : un fonctionnement participatif, sans cours, sans professeur, qui permet aux étudiant(e)s de libérer toute leur créativité grâce à l’apprentissage par projets. 42 a été fondée à l’initiative de Xavier Niel.",
+      "startYear": "2016",
+      "endYear": "2020"
+    },
+    {
+      "school": "Lycée Dorian, BTS Systèmes Électroniques",
+      "degree": "BTS Systèmes électroniques",
+      "field": "Le BTS Systèmes Électroniques est une formation qui a pour objectif de former des spécialistes des technologies électroniques. Les titulaires ont les compétences pour concevoir, fabriquer des dispositifs électroniques et d\"en assurer la maintenance.",
+      "startYear": "2013",
+      "endYear": "2015"
+    },
+    {
+      "school": "Lycée Jacques Prévert, BAC  Systèmes Électroniques et Numériques",
+      "degree": "BAC  Electronic and Digital System",
+      "field": "Le BAC SEN a pour but de former des techniciens capables d’intervenir sur les équipements et les installations électroniques ou numériques, que ce soit pour un particulier, un professionnel ou dans le milieu industriel.",
+      "startYear": "2009",
+      "endYear": "2013"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Français",
+      "level": "Langue maternelle",
+      "code": "FR"
+    },
+    {
+      "language": "Anglais",
+      "level": "Intermédiaire",
+      "code": "GB"
+    }
+  ]
 }

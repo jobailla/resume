@@ -1,5 +1,5 @@
-@import '../../styles/_settings/variables';
-@import '../../styles/_settings/mixins';
+@import "../../styles/_settings/variables";
+@import "../../styles/_settings/mixins";
 
 .wrapper {
   display: flex;
@@ -55,13 +55,12 @@
       transition: max-width 0.3s ease-out;
 
       .icon {
-
         .darkblue {
-          background: #4267B2;
+          background: #4267b2;
         }
 
         .lightblue {
-          background: #1DA1F2
+          background: #1da1f2;
         }
 
         .grey {
@@ -69,11 +68,11 @@
         }
 
         .red {
-          background: #E1306C
+          background: #e1306c;
         }
 
         .green {
-          background: #3AC24A
+          background: #3ac24a;
         }
 
         i {
@@ -125,21 +124,21 @@
 }
 
 .darkblue {
-  color: #4267B2;
+  color: #4267b2;
 }
 
 .lightblue {
-  color: #1DA1F2
+  color: #1da1f2;
 }
 
 .grey {
-  color: #333
+  color: #333;
 }
 
 .red {
-  color: #E1306C
+  color: #e1306c;
 }
 
 .green {
-  color: #3AC24A
+  color: #3ac24a;
 }

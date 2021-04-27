@@ -1,19 +1,16 @@
-@import '../../styles/_settings/variables';
-@import '../../styles/_settings/mixins';
+@import "../../styles/_settings/variables";
+@import "../../styles/_settings/mixins";
 
 .About {
+  @include section-property;
 
-   @include section-property; 
+  &__text {
+    margin-top: 2rem;
+    font-size: $font-size-desktop;
+    font-weight: 300;
 
-    &__text {
-        margin-top: 2rem;
-        font-size: $font-size-desktop;
-        font-weight: 300;
-
-
-        @include media(phone) {
-            font-size: $font-size-mobile;
-        }
-
+    @include media(phone) {
+      font-size: $font-size-mobile;
     }
+  }
 }

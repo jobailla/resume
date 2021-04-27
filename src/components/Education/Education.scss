@@ -1,72 +1,70 @@
-@import '../../styles/_settings/variables';
-@import '../../styles/_settings/mixins';
+@import "../../styles/_settings/variables";
+@import "../../styles/_settings/mixins";
 
 .Education {
+  @include section-property;
 
-   @include section-property; 
+  &__content {
+    margin-top: 1rem;
+  }
 
-    &__content {
-        margin-top: 1rem;
+  &__edu {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0rem;
+
+    &-header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
     }
 
-    &__edu {
-        display: flex;
-        flex-direction: column;
-        margin: 2rem 0rem;
+    &-school {
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+      font-size: $font-size-education-school-desktop;
+      font-weight: 500;
 
-
-        &-header {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-
-        &-school {
-            font-weight: bold;
-            text-transform: uppercase;
-            margin-bottom: 0.5rem;
-            font-size: $font-size-education-school-desktop;
-            font-weight: 500;
-
-            @include media(phone) {
-                font-size: $font-size-education-school-mobile;
-            }
-        }
-
-        &-date {
-            color: $green;
-            font-size: 1rem;
-        }
-
-        &-studies {
-            margin-left: 1rem;
-            font-size: $font-size-desktop;
-            font-weight: 300;
-
-            @include media(phone) {
-                font-size: $font-size-mobile;
-            }
-        }
+      @include media(phone) {
+        font-size: $font-size-education-school-mobile;
+      }
     }
 
-    &__lang {
-        display: flex;
-        align-items: center;
-
-        &__flag {
-            margin: 0;
-            margin-right: 6px
-        }
-
-        &__text {
-            &--noflag {
-                margin-left: 2rem;
-                font-weight: 300;
-            }
-        }
+    &-date {
+      color: $green;
+      font-size: 1rem;
     }
-    
-    li {
-        list-style: none;
+
+    &-studies {
+      margin-left: 1rem;
+      font-size: $font-size-desktop;
+      font-weight: 300;
+
+      @include media(phone) {
+        font-size: $font-size-mobile;
+      }
     }
+  }
+
+  &__lang {
+    display: flex;
+    align-items: center;
+
+    &__flag {
+      margin: 0;
+      margin-right: 6px;
+    }
+
+    &__text {
+      &--noflag {
+        margin-left: 2rem;
+        font-weight: 300;
+      }
+    }
+  }
+
+  li {
+    list-style: none;
+  }
 }
