@@ -20,9 +20,6 @@ export default function SocialLinks(): React.ReactElement {
          }`
     );
 
-
-    console.log(file.publicURL)
-
     interface Isocial {
         site: string;
         icon: string;
