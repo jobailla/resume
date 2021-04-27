@@ -3,20 +3,25 @@ import React, { useEffect } from 'react';
 import './SocialLinks.scss';
 
 export default function SocialLinks(): React.ReactElement {
-    const { socialJson } = useStaticQuery(
+    const { socialJson, file } = useStaticQuery(
         graphql`
-            query SocialLinksQuery {
-           socialJson {
-             socialLinks {
-               site
-               icon
-               url
-               color
-             }
-           }
+             {
+      socialJson {
+        socialLinks {
+          site
+          icon
+          url
+          color
+        }
+      }
+      file(ext: {eq: ".pdf"}, name: {eq: "CV-Jonathan-BAILLAIS"}) {
+        publicURL
+      }
          }`
     );
 
+
+    console.log(file.publicURL)
 
     interface Isocial {
         site: string;
@@ -48,7 +53,7 @@ export default function SocialLinks(): React.ReactElement {
             {socialLinks.map((social: Isocial, i: number) => (
                 <div className="socialLinks" key={`social-${socialLinks[i].site}-${i}`}>
                     <a
-                        href={social.url}
+                        href={social.site === "CV" ?  file.publicURL : social.url}
                         key={`${social.site}-${i}`}
                         target="_blank"
                         rel="noopener noreferrer">
