@@ -70,25 +70,28 @@ export default function Education(): ReactElement {
                 }
             </div>
             <div className="Education__content ">
-                {
-                    languages.map((lang: Ilang, i: number) => (
-                        <li key={`${lang.code}-${i}`}>
-                            <div className="Education__lang">
-                                {lang.code && (
-                                    <FlagIcon
-                                        className="Education__lang__flag"
-                                        code={lang.code}
-                                        size={28}
-                                    />
-                                )}
-                                <div
-                                    className={lang.code ? '' : 'Education__lang__text--noflag'}>
-                                    <span>{lang.language}:</span> {lang.level}.
+                <ul>
+                    {
+                        languages.map((lang: Ilang, i: number) => (
+
+                            <li key={`${lang.code}-${i}`}>
+                                <div className="Education__lang">
+                                    {lang.code && (
+                                        <FlagIcon
+                                            className="Education__lang__flag"
+                                            code={lang.code}
+                                            size={28}
+                                        />
+                                    )}
+                                    <div
+                                        className={lang.code ? '' : 'Education__lang__text--noflag'}>
+                                        <span>{lang.language}:</span> {lang.level}.
                     </div>
-                            </div>
-                        </li>
-                    ))
-                }
+                                </div>
+                            </li>
+                        ))
+                    }
+                </ul>
             </div>
         </div>
     )
