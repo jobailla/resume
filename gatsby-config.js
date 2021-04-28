@@ -75,7 +75,7 @@ module.exports = {
         start_url: `www.jonathan-baillais.fr`,
         background_color: `#0E0913`,
         theme_color: `#1B2029`,
-        icon: `./src/pages/images/avatar.jpg`,
+        icon: `./src/pages/images/favicon.png`,
         orientation: `portrait`,
         display: 'minimal-ui',
       }
