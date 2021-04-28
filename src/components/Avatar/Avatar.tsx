@@ -1,5 +1,5 @@
+import { GatsbyImage } from "gatsby-plugin-image"
 import { graphql, useStaticQuery } from "gatsby";
-import Img from "gatsby-image";
 import React from "react";
 
 export default function Avatar(props: {
@@ -9,11 +9,9 @@ export default function Avatar(props: {
 }): React.ReactElement {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "avatar.jpg" }) {
+      file(relativePath: { eq: "avatar.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 500) {
-            ...GatsbyImageSharpFluid_tracedSVG
-          }
+          gatsbyImageData(layout: FIXED) 
         }
       }
     }
@@ -31,9 +29,9 @@ export default function Avatar(props: {
   }
 
   return (
-    <Img
+    <GatsbyImage 
       style={style}
-      fluid={data.placeholderImage.childImageSharp.fluid}
+      image={data.file.childImageSharp.gatsbyImageData}
       alt={altText}
       title={title}
       backgroundColor={"#1E5C83"}

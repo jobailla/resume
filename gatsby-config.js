@@ -46,13 +46,11 @@ module.exports = {
     // Images
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-react-image-map`,
-
+    `gatsby-plugin-image`,
     // SCSS
     `gatsby-plugin-sass`,
     // Typescript
     `gatsby-plugin-typescript`,
-    // Lint
     // Markdown
     {
       resolve: `gatsby-transformer-remark`,
