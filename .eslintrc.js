@@ -1,6 +1,7 @@
-{
+export default {
     "env": {
         "browser": true,
+        "commonjs": true,
         "es2021": true
     },
     "extends": [
@@ -13,15 +14,12 @@
         "ecmaFeatures": {
             "jsx": true
         },
-        "ecmaVersion": 12,
-        "sourceType": "module"
+        "ecmaVersion": 12
     },
     "plugins": [
         "react",
         "@typescript-eslint"
     ],
     "rules": {
-         "@typescript-eslint/explicit-module-boundary-types": "off",
-         " react/prop-types": "off"
     }
-}
+};

@@ -78,7 +78,6 @@ module.exports = {
         icon: `./src/pages/images/avatar.jpg`,
         orientation: `portrait`,
         display: 'minimal-ui',
-        purpose: `maskable`,
       }
     },
     'gatsby-plugin-offline'
