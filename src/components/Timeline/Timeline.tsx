@@ -1,11 +1,10 @@
-import { graphql, useStaticQuery } from "gatsby";
-import React, { ReactElement } from "react";
 import "./Timeline.scss";
 import { FaSuitcase } from "react-icons/fa";
-import Img, { FluidObject } from "gatsby-image";
+import { graphql, useStaticQuery } from "gatsby";
+import React, { ReactElement } from "react";
 
 export default function Timeline(): ReactElement {
-  const { jobsJson, allFile } = useStaticQuery(graphql`
+  const { jobsJson } = useStaticQuery(graphql`
     {
       jobsJson {
         jobs {
@@ -21,19 +20,6 @@ export default function Timeline(): ReactElement {
           }
         }
       }
-      #   allFile(filter: {dir: {regex: "/entreprise/"}}) {
-      #     edges {
-      #       node {
-      #          name
-      #          publicURL
-      #         childImageSharp {
-      #             fluid(maxWidth: 100 quality: 100) {
-      #               ...GatsbyImageSharpFluid_tracedSVG
-      #             }
-      #         }
-      #       }
-      #     }
-      #   }
     }
   `);
 
@@ -52,19 +38,6 @@ export default function Timeline(): ReactElement {
     image: string;
   }
 
-  // const logos = allFile.edges
-
-  // const style = {
-  //   width: "65px",
-  //   height: "65px",
-  //   borderRadius: "100%",
-  // };
-
-  // const findLogo = (images: string[], imageName: string): FluidObject => {
-  //     const img = images.find((img) => img.node.name === imageName)
-  //     return (img?.node.childImageSharp.fluid)
-  // }
-
   return (
     <div className="Timeline">
       <div className="Timeline__title">
@@ -79,9 +52,7 @@ export default function Timeline(): ReactElement {
             key={`${job.begin.month}-${job.begin.year}_${i}`}
           >
             <div className="Timeline__content__marker" key={`marker-${i}`}>
-              <div className="Timeline__content__marker-dot">
-                {/* <Img  fluid={findLogo(logos, jobs[i].image)} style={style}/> */}
-              </div>
+              <div className="Timeline__content__marker-dot" />
               {i !== jobs.length - 1 ? (
                 <div className="Timeline__content__marker-line" />
               ) : null}

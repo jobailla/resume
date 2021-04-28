@@ -1,8 +1,8 @@
+import "./Stack.scss";
+import { GrStackOverflow } from "react-icons/gr";
 import { graphql, useStaticQuery } from "gatsby";
 import Img from "gatsby-image";
 import React from "react";
-import { GrStackOverflow } from "react-icons/gr";
-import "./Stack.scss";
 
 export default function Stack(): React.ReactElement {
   const stack = useStaticQuery(

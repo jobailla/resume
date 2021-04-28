@@ -1,6 +1,6 @@
+import "./SocialLinks.scss";
 import { graphql, useStaticQuery } from "gatsby";
 import React, { useEffect } from "react";
-import "./SocialLinks.scss";
 
 export default function SocialLinks(): React.ReactElement {
   const { socialJson, file } = useStaticQuery(

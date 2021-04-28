@@ -1,7 +1,7 @@
+import "./About.scss";
+import { FaUserAlt } from "react-icons/fa";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import { FaUserAlt } from "react-icons/fa";
-import "./About.scss";
 
 export default function About(): React.ReactElement {
   const { markdownRemark } = useStaticQuery(

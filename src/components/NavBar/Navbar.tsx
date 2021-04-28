@@ -1,8 +1,8 @@
-import React, { useState } from "react";
-import Burger from "../Burger";
 import "./NavBar.scss";
-import { useStaticQuery, graphql } from "gatsby";
 import { Link } from "react-scroll";
+import { graphql, useStaticQuery } from "gatsby";
+import Burger from "../Burger";
+import React, { useState } from "react";
 
 export default function Navbar(): React.ReactElement {
   const { headerJson } = useStaticQuery(

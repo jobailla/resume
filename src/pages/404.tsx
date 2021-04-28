@@ -1,9 +1,8 @@
+import "./404.scss";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import Layout from "../components/Layout";
 import SEO from "../components/SEO";
 import Wrapper from "../components/Wrapper";
-import "./404.scss";
 
 export default function NotFound(): React.ReactElement {
   const { markdownRemark } = useStaticQuery(

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
 import "./Burger.scss";
+import React, { useEffect, useState } from "react";
 
 interface Props {
   toggled: boolean;

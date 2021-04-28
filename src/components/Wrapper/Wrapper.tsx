@@ -1,6 +1,6 @@
-import React from "react";
 import "./Wrapper.scss";
+import React from "react";
 
-export default function Wrapper({ children }: any): React.ReactElement {
+export default function Wrapper({ children }): React.ReactElement {
   return <div className="Wrapper">{children}</div>;
 }

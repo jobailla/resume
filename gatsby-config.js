@@ -53,7 +53,6 @@ module.exports = {
     // Typescript
     `gatsby-plugin-typescript`,
     // Lint
-    `gatsby-plugin-tslint`,
     // Markdown
     {
       resolve: `gatsby-transformer-remark`,
@@ -77,9 +76,9 @@ module.exports = {
         theme_color: `#1B2029`,
         icon: `./src/pages/images/favicon.png`,
         orientation: `portrait`,
-        display: 'minimal-ui',
+        display: "minimal-ui",
       }
     },
-    'gatsby-plugin-offline'
+    "gatsby-plugin-offline"
   ],
 }

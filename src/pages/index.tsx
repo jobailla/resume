@@ -1,5 +1,6 @@
-import { graphql, useStaticQuery } from "gatsby";
+import "./index.scss";
 import * as React from "react";
+import { graphql, useStaticQuery } from "gatsby";
 import About from "../components/About/About";
 import Avatar from "../components/Avatar";
 import Education from "../components/Education";
@@ -9,7 +10,6 @@ import SocialLinks from "../components/SocialLinks";
 import Stack from "../components/Stack";
 import Timeline from "../components/Timeline";
 import Wrapper from "../components/Wrapper";
-import "./index.scss";
 
 export default function IndexPage(): React.ReactElement {
   const { site } = useStaticQuery(
