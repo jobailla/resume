@@ -36,9 +36,15 @@ export default function Stack(): React.ReactElement {
 
   const { edges } = stack.allFile;
   const { stackJson } = stack
-  // console.log(stackJson)
+  // console.log('json',stackJson)
+  // console.log('edges', edges)
 
 
+
+    //   const matchJson = (skill: string[], skillName: string) => {
+    //     const img = images.find((img) => skill.skillName === imageName)
+    //     return (img?.node.childImageSharp.fluid)
+    // }
 
 
   return (
