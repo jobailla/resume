@@ -24,11 +24,22 @@ export default function Stack(): React.ReactElement {
             }
           }
         }
+        stackJson {
+          stack {
+            link
+            skill
+           }
+        }
       }
     `
   );
 
   const { edges } = stack.allFile;
+  const { stackJson } = stack
+  // console.log(stackJson)
+
+
+
 
   return (
     <div className="Stack">
