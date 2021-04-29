@@ -1,5 +1,3 @@
-/* eslint-disable no-undef */
-
 module.exports = {
   siteMetadata: {
     title: `Jonathan Baillais Resume`,
