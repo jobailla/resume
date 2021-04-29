@@ -1,6 +1,6 @@
-import "./SocialLinks.scss";
 import { graphql, useStaticQuery } from "gatsby";
 import React, { useEffect } from "react";
+import "./SocialLinks.scss";
 
 export default function SocialLinks(): React.ReactElement {
   const { socialJson, file } = useStaticQuery(
@@ -30,20 +30,20 @@ export default function SocialLinks(): React.ReactElement {
 
   const { socialLinks } = socialJson;
 
-  const addScript = (url: string) => {
-    const script = document.createElement("script");
-    script.src = url;
-    script.async = true;
-    document.body.appendChild(script);
-  };
+  // const addScript = (url: string) => {
+  //   const script = document.createElement("script");
+  //   script.src = url;
+  //   script.async = true;
+  //   document.body.appendChild(script);
+  // };
 
-  const onClientEntry = () => {
-    addScript("https://kit.fontawesome.com/a076d05399.js");
-  };
+  // const onClientEntry = () => {
+  //   addScript("https://kit.fontawesome.com/a076d05399.js");
+  // };
 
-  useEffect(() => {
-    onClientEntry();
-  }, []);
+  // useEffect(() => {
+  //   onClientEntry();
+  // }, []);
 
   return (
     <div className="wrapper">
