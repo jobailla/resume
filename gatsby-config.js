@@ -73,6 +73,8 @@ module.exports = {
         icon: `./src/pages/images/favicon.png`,
         orientation: `portrait`,
         display: "minimal-ui",
+        purpose: "any maskable"
+
       }
     },
     "gatsby-plugin-offline"
