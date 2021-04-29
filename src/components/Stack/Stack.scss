@@ -27,7 +27,7 @@
     }
 
     @include media(phoneSmall) {
-      grid-template-columns: repeat(5, $icon-size);
+      grid-template-columns: repeat(3, $icon-size);
       margin-bottom: $icon-size * 2;
       gap: 1rem;
     }

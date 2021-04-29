@@ -4,7 +4,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  background: $app-theme-color;
+  background: $app-backgroud-color;
 
   @include media(desktop) {
     font-size: 72.5%;
@@ -16,6 +16,7 @@ body {
   font-size: 1.4rem;
   background-color: $app-theme-color;
   color: $white;
+
 }
 
 span {
