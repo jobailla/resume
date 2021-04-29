@@ -1,18 +1,28 @@
 @import "./variables";
 @import "./mixins";
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap");
+
+@font-face {
+    font-family: 'Ubuntu Medium';
+    src: url("fonts/Ubuntu-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'Ubuntu Light';
+    src: url("fonts/Ubuntu-Light.ttf");
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  background: $app-backgroud-color;
-
+  background: $app-theme-color;
+  
   @include media(desktop) {
     font-size: 72.5%;
   }
 }
 
 body {
-  font-family: Ubuntu;
+  font-family: "Ubuntu Light";
   font-size: 1.4rem;
   background-color: $app-theme-color;
   color: $white;
@@ -20,5 +30,6 @@ body {
 }
 
 span {
+  font-family: "Ubuntu Medium";
   color: $green;
 }

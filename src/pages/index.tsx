@@ -40,7 +40,11 @@ export default function IndexPage(): React.ReactElement {
                 <div className="avatar">
                   <Avatar altText="avatar" title="avatar" />
                 </div>
-                <div className="nameTitle">{author}</div>
+                <div className="nameTitle">
+                  <span>
+                    {author}
+                  </span>
+                </div>
                 <div className="links">
                   <SocialLinks />
                 </div>
