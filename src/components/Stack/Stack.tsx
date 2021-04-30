@@ -24,28 +24,11 @@ export default function Stack(): React.ReactElement {
             }
           }
         }
-        stackJson {
-          stack {
-            link
-            skill
-           }
-        }
       }
     `
   );
 
   const { edges } = stack.allFile;
-  const { stackJson } = stack
-  // console.log('json',stackJson)
-  // console.log('edges', edges)
-
-
-
-    //   const matchJson = (skill: string[], skillName: string) => {
-    //     const img = images.find((img) => skill.skillName === imageName)
-    //     return (img?.node.childImageSharp.fluid)
-    // }
-
 
   return (
     <div className="Stack">
@@ -57,6 +40,7 @@ export default function Stack(): React.ReactElement {
         {edges.map((_image: undefined, i: React.Key) => (
           <div className="logo" key={i}>
             <Img fluid={edges[i].node.childImageSharp.fluid} />
+            {/* <p>{edges[i].node.name.substr(3)}</p> */}
           </div>
         ))}
       </div>
