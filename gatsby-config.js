@@ -78,7 +78,17 @@ module.exports = {
 
       }
     },
+    // ServiceWorker
     "gatsby-plugin-offline",
+    // Analytics 
+      {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: process.env.GATSBY_GOOGLE_TRAKINGID,
+        head: false,
+        anonymize: true,
+      }
+    },
     "gatsby-plugin-vercel"
   ],
 }
