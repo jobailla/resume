@@ -94,7 +94,7 @@ module.exports = {
      {
     resolve: "gatsby-plugin-preconnect",
     options: {
-      domains: ["https://kit.fontawesome.com/", "https://www.google-analytics.com", "https://fonts.googleapis.com"],
+      domains: ["https://kit.fontawesome.com/e0a8da67ca.js", "https://www.google-analytics.com", "https://fonts.googleapis.com"],
     },
   },
   ],

@@ -16,7 +16,7 @@ const addScript = (url) => {
 };
 
 const onClientEntry = () => {
-  addScript("https://kit.fontawesome.com/a076d05399.js");
+  addScript("https://kit.fontawesome.com/e0a8da67ca.js");
 };
 
 onClientEntry();
