@@ -89,6 +89,13 @@ module.exports = {
         anonymize: true,
       }
     },
-    "gatsby-plugin-vercel"
+    "gatsby-plugin-vercel",
+    // Preconnect
+     {
+    resolve: "gatsby-plugin-preconnect",
+    options: {
+      domains: ["https://kit.fontawesome.com/", "https://www.google-analytics.com", "https://fonts.googleapis.com"],
+    },
+  },
   ],
 }
