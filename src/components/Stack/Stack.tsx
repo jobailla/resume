@@ -1,6 +1,8 @@
 import "./Stack.scss";
 import { GrStackOverflow } from "react-icons/gr";
+import { ITooltipHostStyles, TooltipHost } from "@fluentui/react/lib/Tooltip";
 import { graphql, useStaticQuery } from "gatsby";
+import { useId } from "@fluentui/react-hooks";
 import Img from "gatsby-image";
 import React from "react";
 
@@ -29,6 +31,9 @@ export default function Stack(): React.ReactElement {
   );
 
   const { edges } = stack.allFile;
+  const hostStyles: Partial<ITooltipHostStyles> = { root: { display: "inline-block" } };
+  const tooltipId = useId("tooltip");
+  const calloutProps = { gapSpace: 0 };
 
   return (
     <div className="Stack">
@@ -38,10 +43,16 @@ export default function Stack(): React.ReactElement {
       </div>
       <div className="Stack__images">
         {edges.map((_image: undefined, i: React.Key) => (
-          <div className="logo" key={i}>
-            <Img fluid={edges[i].node.childImageSharp.fluid} />
-            {/* <p>{edges[i].node.name.substr(3)}</p> */}
-          </div>
+          <TooltipHost key={`tooltip-${i}`}
+            content={edges[i].node.name.substr(3)}
+            id={tooltipId}
+            calloutProps={calloutProps}
+            styles={hostStyles}
+            >
+            <div className="logo" key={i}>
+              <Img fluid={edges[i].node.childImageSharp.fluid} />
+            </div>
+          </TooltipHost>
         ))}
       </div>
     </div>
