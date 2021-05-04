@@ -104,5 +104,13 @@ module.exports = {
         domains: ["https://kit.fontawesome.com/e0a8da67ca.js", "https://www.google-analytics.com", "https://fonts.googleapis.com"],
       },
     },
+    // Optimisations
+    `gatsby-plugin-preact`,
+     {
+      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+      options: {
+        devMode: true,
+      },
+    },
   ],
 }
