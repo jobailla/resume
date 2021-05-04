@@ -20,7 +20,6 @@ export default function NotFound(): React.ReactElement {
 
   return (
     <div className="notFound">
-      <SEO title="Page Not Found" />
       <div className="notFound__content">
         <div className="notFound__mainTitle">
           {markdownRemark.frontmatter.description}
