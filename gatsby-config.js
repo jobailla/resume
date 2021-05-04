@@ -8,7 +8,7 @@ module.exports = {
     twitterUsername: `jobailla`,
     tagline: `developper resume`,
     author: `Jonathan Baillais`,
-    keywords: `developer, développeur, dev, 42, React, Javascript, Typescript, web, CV, resume, curiculum, Jonathan Baillais, recrutement, Paris, Île-de-France`,
+    keywords: "developer, développeur, dev, 42, React, Javascript, Typescript, web, CV, resume, curiculum, Jonathan Baillais, recrutement, Paris, Île-de-France",
   },
   plugins: [
     // Filesystem
