@@ -1,6 +1,7 @@
 import "./SocialLinks.scss";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
+import Link from 'gatsby-link'
 
 export default function SocialLinks(): React.ReactElement {
   const { socialJson, file } = useStaticQuery(
@@ -34,7 +35,7 @@ export default function SocialLinks(): React.ReactElement {
     <div className="wrapper">
       {socialLinks.map((social: Isocial, i: number) => (
         <div className="socialLinks" key={`social-${socialLinks[i].site}-${i}`}>
-          <a
+          <Link
             href={social.site === "CV" ? file.publicURL : social.url}
             key={`${social.site}-${i}`}
             target="_blank"
@@ -48,7 +49,7 @@ export default function SocialLinks(): React.ReactElement {
               </div>
               <span className={`${social.color}`}>{social.site}</span>
             </div>
-          </a>
+          </Link>
         </div>
       ))}
     </div>
