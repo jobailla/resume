@@ -36,7 +36,7 @@ export default function SocialLinks(): React.ReactElement {
       {socialLinks.map((social: Isocial, i: number) => (
         <div className="socialLinks" key={`social-${socialLinks[i].site}-${i}`}>
           <Link
-            href={social.site === "CV" ? file.publicURL : social.url}
+            to={social.site === "CV" ? file.publicURL : social.url}
             key={`${social.site}-${i}`}
             target="_blank"
             rel="noopener noreferrer"
