@@ -99,7 +99,7 @@ module.exports = {
     {
       resolve: "@sentry/gatsby",
       options: {
-        dsn: process.env.GATSBY_SENTRY_DNS,
+        dsn: process.env.GATSBY_SENTRY_DSN,
       },
     },
 
