@@ -4,7 +4,7 @@ module.exports = {
     name: `Jonathan Baillais`,
     image: `./pages/images/avatar.jpg`,
     description: `Jonathan Baillais resume`,
-    url: `https://jonathan-baillais.fr`,
+    siteUrl: `https://jonathan-baillais.fr`,
     twitterUsername: `jobailla`,
     tagline: `developper resume`,
     author: `Jonathan Baillais`,
