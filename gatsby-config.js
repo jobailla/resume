@@ -48,6 +48,13 @@ module.exports = {
     `gatsby-plugin-fontawesome-css`,
     // SCSS
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true,
+        develop: true, // Enable while using `gatsby develop`,
+      },
+    },
     // Typescript
     `gatsby-plugin-typescript`,
     // Markdown
@@ -75,13 +82,12 @@ module.exports = {
         orientation: `portrait`,
         display: "minimal-ui",
         purpose: "maskable"
-
       }
     },
     // ServiceWorker
     "gatsby-plugin-offline",
     // Analytics 
-      {
+    {
       resolve: `gatsby-plugin-gtag`,
       options: {
         trackingId: process.env.GATSBY_GOOGLE_TRAKINGID,
@@ -91,11 +97,11 @@ module.exports = {
     },
     "gatsby-plugin-vercel",
     // Preconnect
-     {
-    resolve: "gatsby-plugin-preconnect",
-    options: {
-      domains: ["https://kit.fontawesome.com/e0a8da67ca.js", "https://www.google-analytics.com", "https://fonts.googleapis.com"],
+    {
+      resolve: "gatsby-plugin-preconnect",
+      options: {
+        domains: ["https://kit.fontawesome.com/e0a8da67ca.js", "https://www.google-analytics.com", "https://fonts.googleapis.com"],
+      },
     },
-  },
   ],
 }
