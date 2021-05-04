@@ -2,8 +2,6 @@
 @import "../../styles/_settings/mixins";
 
 .About {
-  @include section-property;
-
   &__text {
     margin-top: 2rem;
     font-size: $font-size-desktop;

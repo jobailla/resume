@@ -2,8 +2,6 @@
 @import "../../styles/_settings/mixins";
 
 .Timeline {
-  @include section-property;
-
   &__content {
     margin-top: 1rem;
     font-size: $font-size-desktop;

@@ -2,6 +2,7 @@ import "./About.scss";
 import { FaUserAlt } from "react-icons/fa";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
+import SectionTitle from "../SectionTitle";
 
 export default function About(): React.ReactElement {
   const { markdownRemark } = useStaticQuery(
@@ -20,12 +21,7 @@ export default function About(): React.ReactElement {
 
   return (
     <div className="About">
-      <div className="About__title">
-        <FaUserAlt size={28} />
-        <div className="About__title__description">
-          {markdownRemark.frontmatter.description}
-        </div>
-      </div>
+      <SectionTitle icon={<FaUserAlt size={28} />} text={markdownRemark.frontmatter.description} />
       <div
         className="About__text"
         dangerouslySetInnerHTML={{ __html: markdownRemark.html }}

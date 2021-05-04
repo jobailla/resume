@@ -1,0 +1,17 @@
+@import "../../styles/_settings/variables";
+@import "../../styles/_settings/mixins";
+
+.icon {
+    display: flex;
+    flex-direction: row;
+    color: $section-title-color;
+}
+
+.text {
+      margin-left: 1rem;
+      font-size: $font-size-section-title-desktop;
+
+      @include media(phone) {
+        font-size: $font-size-section-title-mobile;
+      }
+    }

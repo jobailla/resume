@@ -2,8 +2,6 @@
 @import "../../styles/_settings/mixins";
 
 .Education {
-  @include section-property;
-
   &__content {
     margin-top: 1rem;
   }

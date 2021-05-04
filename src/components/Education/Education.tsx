@@ -3,6 +3,7 @@ import { FaUniversity } from "react-icons/fa";
 import { FlagIcon, FlagIconCode } from "react-flag-kit";
 import { graphql, useStaticQuery } from "gatsby";
 import React, { ReactElement } from "react";
+import SectionTitle from "../SectionTitle";
 
 export default function Education(): ReactElement {
   const data = useStaticQuery(graphql`
@@ -42,10 +43,7 @@ export default function Education(): ReactElement {
 
   return (
     <div className="Education">
-      <div className="Education__title">
-        <FaUniversity size={28} />
-        <div className="Education__title__description">Études</div>
-      </div>
+      <SectionTitle icon={<FaUniversity size={28} />} text="Études" />
       <div className="Education__content">
         {education.map((edu: Iedu, i: number) => (
           <div key={`${edu.school}_${i}`}>

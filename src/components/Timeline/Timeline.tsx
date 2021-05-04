@@ -2,6 +2,7 @@ import "./Timeline.scss";
 import { FaSuitcase } from "react-icons/fa";
 import { graphql, useStaticQuery } from "gatsby";
 import React, { ReactElement } from "react";
+import SectionTitle from "../SectionTitle";
 
 export default function Timeline(): ReactElement {
   const { jobsJson } = useStaticQuery(graphql`
@@ -40,11 +41,7 @@ export default function Timeline(): ReactElement {
 
   return (
     <div className="Timeline">
-      <div className="Timeline__title">
-        <FaSuitcase size={28} />
-        <div className="Timeline__title__description">Éxpériences</div>
-      </div>
-
+      <SectionTitle icon={<FaSuitcase size={28} />} text="Éxpériences" />
       <div className="Timeline__content">
         {jobs.map((job: Ijob, i: number) => (
           <div

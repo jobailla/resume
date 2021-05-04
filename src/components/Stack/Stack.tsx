@@ -5,6 +5,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import { useId } from "@fluentui/react-hooks";
 import Img from "gatsby-image";
 import React from "react";
+import SectionTitle from "../SectionTitle";
 
 export default function Stack(): React.ReactElement {
   const stack = useStaticQuery(
@@ -37,10 +38,7 @@ export default function Stack(): React.ReactElement {
 
   return (
     <div className="Stack">
-      <div className="Stack__title">
-        <GrStackOverflow size={28} />
-        <div className="Stack__title__description">Stack</div>
-      </div>
+      <SectionTitle icon={<GrStackOverflow size={28} />} text="Stack" />
       <div className="Stack__images">
         {edges.map((_image: undefined, i: React.Key) => (
           <TooltipHost key={`tooltip-${i}`}
@@ -48,7 +46,7 @@ export default function Stack(): React.ReactElement {
             id={tooltipId}
             calloutProps={calloutProps}
             styles={hostStyles}
-            >
+          >
             <div className="logo" key={i}>
               <Img fluid={edges[i].node.childImageSharp.fluid} />
             </div>

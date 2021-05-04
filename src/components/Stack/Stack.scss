@@ -2,8 +2,6 @@
 @import "../../styles/_settings/mixins";
 
 .Stack {
-  @include section-property;
-
   &__images {
     display: grid;
     grid-template-columns: repeat(7, $icon-size);
