@@ -52,7 +52,8 @@ module.exports = {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: true,
-        develop: true, // Enable while using `gatsby develop`,
+        ignore: ["SocialLinks.scss"],
+        develop: true,
       },
     },
     // Typescript
