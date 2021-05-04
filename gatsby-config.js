@@ -96,6 +96,13 @@ module.exports = {
         anonymize: true,
       }
     },
+    {
+      resolve: "@sentry/gatsby",
+      options: {
+        dsn: process.env.GATSBY_SENTRY_DNS,
+      },
+    },
+
     "gatsby-plugin-vercel",
     // Preconnect
     {
