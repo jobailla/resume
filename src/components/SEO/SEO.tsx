@@ -20,7 +20,7 @@ const detailQuery = graphql`
 interface Props {
   title?: string;
   description?: string;
-  keywords?: string;
+  keywords?: string[];
   image?: string;
   author?: string;
   url?: string;
