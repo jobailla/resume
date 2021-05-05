@@ -1,5 +1,5 @@
 import "./Education.scss";
-import { FaUniversity } from "react-icons/fa";
+import { FaUniversity } from "@react-icons/all-files/fa/FaUniversity";
 import { FlagIcon, FlagIconCode } from "react-flag-kit";
 import { graphql, useStaticQuery } from "gatsby";
 import React, { ReactElement } from "react";

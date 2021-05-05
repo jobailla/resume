@@ -1,5 +1,5 @@
 import "./Timeline.scss";
-import { FaSuitcase } from "react-icons/fa";
+import { FaSuitcase } from "@react-icons/all-files/fa/FaSuitcase";
 import { graphql, useStaticQuery } from "gatsby";
 import React, { ReactElement } from "react";
 import SectionTitle from "../SectionTitle";

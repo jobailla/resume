@@ -1,5 +1,5 @@
 import "./About.scss";
-import { FaUserAlt } from "react-icons/fa";
+import { FaUserAlt } from "@react-icons/all-files/fa/FaUserAlt";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import SectionTitle from "../SectionTitle";

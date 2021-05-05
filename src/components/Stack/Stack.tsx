@@ -1,5 +1,5 @@
 import "./Stack.scss";
-import { GrStackOverflow } from "react-icons/gr";
+import { GrStackOverflow } from "@react-icons/all-files/gr/GrStackOverflow";
 import { ITooltipHostStyles, TooltipHost } from "@fluentui/react/lib/Tooltip";
 import { graphql, useStaticQuery } from "gatsby";
 import { useId } from "@fluentui/react-hooks";
