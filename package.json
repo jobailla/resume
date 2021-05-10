@@ -48,8 +48,6 @@
     "gatsby-transformer-remark": "^4.0.0",
     "gatsby-transformer-sharp": "^3.4.0",
     "node-sass": "^6.0.0",
-    "preact": "^10.5.13",
-    "preact-render-to-string": "^5.1.19",
     "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
