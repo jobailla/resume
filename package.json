@@ -31,7 +31,7 @@
     "gatsby-plugin-gtag": "^1.0.13",
     "gatsby-plugin-image": "^1.4.0",
     "gatsby-plugin-load-script": "^1.1.0",
-    "gatsby-plugin-manifest": "^3.4.0",
+    "gatsby-plugin-manifest": "^4.0.0",
     "gatsby-plugin-offline": "^4.3.0",
     "gatsby-plugin-preact": "^5.4.0",
     "gatsby-plugin-preconnect": "^1.2.0",
