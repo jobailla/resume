@@ -61,7 +61,7 @@
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",
-    "eslint": "^7.25.0",
+    "eslint": "^8.2.0",
     "eslint-plugin-react": "^7.23.2",
     "gatsby-plugin-perf-budgets": "^0.0.18"
   }
