@@ -8,7 +8,23 @@ module.exports = {
     twitterUsername: `jobailla`,
     tagline: `developper resume`,
     author: `Jonathan Baillais`,
-    keywords: ["developer", "développeur", "dev", "42", "React", "Javascript", "Typescript", "web", "CV", "resume", "curiculum", "Jonathan Baillais", "recrutement", "Paris", "Île-de-France"],
+    keywords: [
+      "developer",
+      "développeur",
+      "dev",
+      "42",
+      "React",
+      "Javascript",
+      "Typescript",
+      "web",
+      "CV",
+      "resume",
+      "curiculum",
+      "Jonathan Baillais",
+      "recrutement",
+      "Paris",
+      "Île-de-France",
+    ],
   },
   plugins: [
     // Filesystem
@@ -48,14 +64,14 @@ module.exports = {
     `gatsby-plugin-fontawesome-css`,
     // SCSS
     `gatsby-plugin-sass`,
-    {
-      resolve: `gatsby-plugin-purgecss`,
-      options: {
-        printRejected: true,
-        ignore: ["SocialLinks.scss", "NavBar.scss"],
-        develop: false,
-      },
-    },
+    // {
+    //   resolve: `gatsby-plugin-purgecss`,
+    //   options: {
+    //     printRejected: true,
+    //     ignore: ["SocialLinks.scss", "NavBar.scss"],
+    //     develop: false,
+    //   },
+    // },
     // Typescript
     `gatsby-plugin-typescript`,
     // Markdown
@@ -82,43 +98,47 @@ module.exports = {
         icon: `./src/pages/images/favicon.png`,
         orientation: `portrait`,
         display: "minimal-ui",
-        purpose: "maskable"
-      }
+        purpose: "maskable",
+      },
     },
     // ServiceWorker
     "gatsby-plugin-offline",
-    // Analytics 
+    // Analytics
     {
       resolve: `gatsby-plugin-gtag`,
       options: {
         trackingId: process.env.GATSBY_GOOGLE_TRAKINGID,
         head: false,
         anonymize: true,
-      }
+      },
     },
     "gatsby-plugin-vercel",
     // Preconnect
     {
       resolve: "gatsby-plugin-preconnect",
       options: {
-        domains: ["https://kit.fontawesome.com/e0a8da67ca.js", "https://www.google-analytics.com", "https://fonts.googleapis.com"],
+        domains: [
+          "https://kit.fontawesome.com/e0a8da67ca.js",
+          "https://www.google-analytics.com",
+          "https://fonts.googleapis.com",
+        ],
       },
     },
     // Optimisations
     `gatsby-plugin-perf-budgets`,
-    {
-      resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
-      options: {
-        devMode: false,
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-webpack-bundle-analyser-v2",
+    //   options: {
+    //     devMode: false,
+    //   },
+    // },
     // Robot
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
         host: "https://www.jonathan-baillais.fr/",
-        policy: [{ userAgent: "*", allow: "/" }]
-      }
-    }
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    },
   ],
-}
+};
