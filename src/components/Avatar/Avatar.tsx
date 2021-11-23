@@ -1,4 +1,4 @@
-import { GatsbyImage } from "gatsby-plugin-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 
@@ -11,7 +11,12 @@ export default function Avatar(props: {
     query {
       file(relativePath: { eq: "avatar.jpg" }) {
         childImageSharp {
-          gatsbyImageData(layout: FIXED) 
+          gatsbyImageData(
+            layout: FIXED
+            formats: AUTO
+            quality: 100
+            width: 200
+          )
         }
       }
     }
@@ -29,7 +34,7 @@ export default function Avatar(props: {
   }
 
   return (
-    <GatsbyImage 
+    <GatsbyImage
       style={style}
       image={data.file.childImageSharp.gatsbyImageData}
       alt={altText}
