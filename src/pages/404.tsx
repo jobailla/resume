@@ -1,7 +1,6 @@
 import "./404.scss";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import SEO from "../components/SEO";
 
 export default function NotFound(): React.ReactElement {
   const { markdownRemark } = useStaticQuery(
@@ -24,10 +23,10 @@ export default function NotFound(): React.ReactElement {
         <div className="notFound__mainTitle">
           {markdownRemark.frontmatter.description}
         </div>
-        {/* <div
+        <div
           className="notFound__text"
           dangerouslySetInnerHTML={{ __html: markdownRemark.html }}
-        /> */}
+        />
       </div>
     </div>
   );

@@ -21,7 +21,10 @@ export default function About(): React.ReactElement {
 
   return (
     <div className="About">
-      <SectionTitle icon={<FaUserAlt size={28} />} text={markdownRemark.frontmatter.description} />
+      <SectionTitle
+        icon={<FaUserAlt size={28} />}
+        text={markdownRemark.frontmatter.description}
+      />
       <div
         className="About__text"
         dangerouslySetInnerHTML={{ __html: markdownRemark.html }}

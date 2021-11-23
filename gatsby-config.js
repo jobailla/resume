@@ -114,10 +114,10 @@ module.exports = {
     },
     // Robot
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: 'https://www.jonathan-baillais.fr/',
-        policy: [{ userAgent: '*', allow: '/' }]
+        host: "https://www.jonathan-baillais.fr/",
+        policy: [{ userAgent: "*", allow: "/" }]
       }
     }
   ],
