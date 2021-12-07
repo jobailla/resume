@@ -4,28 +4,26 @@
 .notFound {
   height: 100vh;
   width: 100%;
-  
+
   &__content {
-    border: 3px solid $green;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    border: 3px solid $green;
     height: 100%;
     background-color: $app-backgroud-color;
   }
 
   &__mainTitle {
     font-size: $font-size-name-desktop;
-    position: absolute;
     color: $green;
 
     @include media(phone) {
       font-size: $font-size-name-phone;
     }
-
   }
   &__text {
-    margin: 5%;
+    margin: 1rem;
   }
 }
