@@ -3,12 +3,11 @@ title: About
 description: À propos
 ---
 
-Étudiant à <span>42 Paris</span> depuis 2016.  
-  
-Après une expérience d'entrepreneuriat au sein de <span>Matrice</span>, je me suis orienté vers le développement web avec <span>JavaScript</span>.  
+Je suis étudiant à <span>42 Paris</span> depuis 2016.
+</br></br>
+Après une expérience d'<span>entrepreneuriat</span> au sein de Matrice, je me suis orienté vers le développement web avec <span>JavaScript</span>.
+</br></br>
+J’ai réalisé plusieurs <span>projets personnels</span> avec cette stack, je souhaite aujourd’hui mettre en pratique ces compétences sur des projets de plus grande envergure.
+</br></br>
 
-J’ai principalement réalisé des projets avec <span>React</span> pour le front et <span>NodeJS</span> pour le back, cependant je reste flexible et m'intéresse à toute la stack JS.  
-
-J’apprécie particulièrement de travailler avec des transpilers comme <span>Typescript</span> et <span>SASS</span>.
-
-Je suis à la recherche d’une entreprise dans laquelle je pourrai réaliser des projets en équipe et relever de nouveaux challenges.
+Travailler en équipe me permettra de progresser vers une plus grande expertise technique.
