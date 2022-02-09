@@ -3,8 +3,8 @@
 
 .About {
   &__text {
-    margin-top: 2rem;
-    font-size: $font-size-desktop;
+    margin-top: 3rem;
+    font-size: 18px;
     font-weight: 300;
 
     @include media(phone) {

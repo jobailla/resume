@@ -4,7 +4,40 @@
       "school": "42, Architecte en technologie numérique",
       "field": "42 est la première formation en informatique entièrement gratuite, ouverte à toutes et à tous sans condition de diplôme et accessible dès 18 ans. Sa pédagogie est basée sur le peer-to-peer learning : un fonctionnement participatif, sans cours, sans professeur, qui permet aux étudiant(e)s de libérer toute leur créativité grâce à l’apprentissage par projets. 42 a été fondée à l’initiative de Xavier Niel.",
       "startYear": "2016",
-      "endYear": "2020"
+      "endYear": "2021",
+      "projects": [
+        {
+          "title": "42 AI IronCar",
+          "description": "Participation à une course de mini-voitures autonomes, dirigé uniquement par un réseau de neurones artificiels. Obtention de la première place en équipe",
+          "skills": ["Python", "Electronique", "AI", "Tensorflow", "Keras"],
+          "notes": "C'est un projet libre à l’initiative des étudiants, il m’a permis de m’initier à l’IA et d’y joindre mes compétences en électronique.  "
+        },
+        {
+          "title": "42 Electronics",
+          "description": "Le module électronique de 42 est un projet libre en équipe de 4 étudiants. Il s'agit d'un projet qui consiste à designer, concevoir, assembler et programmer un circuit imprimé (PCB) bassé sur un micro-controleur PIC32. Pour ce projet, nous avons décidé de fabriquer un gant de motion capture communiquant en Bluetooth et stockant des données sur une carte micro-SD.",
+          "skills": [
+            "C",
+            "Algorithme",
+            "Electronique",
+            "PIC32",
+            "Altium",
+            "Bluetooth",
+            "Travail d'équipe"
+          ],
+          "notes": "Ce projet a été l’occasion de travailler en équipe pendant 8 mois et de développer mes compétences aussi bien théoriques que pratique. Il m’a aussi permis de travailler sur mes compétences organisationnelles au sein d'un groupe."
+        },
+        {
+          "title": "Minishell",
+          "description": "Projet qui consiste à recoder une partie du shell unix",
+          "skills": ["C", "Algorithme", "Librairie"],
+          "notes": "Il m'a permis d'appréhender et de mieux comprendre le fonctionement d'un shell et de son API."
+        },
+        {
+          "title": "Printf",
+          "description": "Projet qui consiste à recoder la fonction printf de la librarie standard <stdio.h>. Cette fonction sert à afficher des données dans un flux de sortie.",
+          "skills": ["C", "Algorithme", "Parsing"]
+        }
+      ]
     },
     {
       "school": "Lycée Dorian, BTS Systèmes Électroniques",
@@ -19,6 +52,15 @@
       "field": "Le BAC SEN a pour but de former des techniciens capables d’intervenir sur les équipements et les installations électroniques ou numériques, que ce soit pour un particulier, un professionnel ou dans le milieu industriel.",
       "startYear": "2009",
       "endYear": "2013"
+    }
+  ],
+  "personal": [
+    {
+      "title": "Timelapse",
+      "description": "Développement d'un <span>timelapse</span> avec <span>Raspberry Pi</span>",
+      "skills": ["Python", "Raspberry Pi", "Electronique"],
+      "notes": "ce projet a été l’occasion de travailler sur un projet avec un problématique énergétique importante, ce qui m’a forcé à avoir une rigueur importante sur l’optimisation et le temps d’exécution",
+      "link": "https://github.com/jobailla/RPIZ-timelapse"
     }
   ],
   "languages": [

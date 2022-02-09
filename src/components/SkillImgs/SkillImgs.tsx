@@ -1,0 +1,40 @@
+import { useId } from "@fluentui/react-hooks";
+import { ITooltipHostStyles, TooltipHost } from "@fluentui/react/lib/Tooltip";
+import Img from "gatsby-image";
+import React, { ReactElement } from "react";
+import "./SkillImgs.scss";
+
+interface Props {
+  skills: string[];
+  imgs: any;
+}
+
+export default function SkillImgs({ skills, imgs }: Props): ReactElement {
+  const filteredImgs = imgs
+    .filter((img: any) => skills.includes(img.node.name))
+    .reverse();
+
+  const tooltipId = useId("tooltip");
+  const calloutProps = { gapSpace: 0 };
+
+  return (
+    <div className="SkillImgs">
+      {filteredImgs.map((img: any, i: React.Key) => (
+        <div className="SkillImgs__imgs" key={i}>
+          <TooltipHost
+            key={`tooltip-${i}`}
+            content={img.node.name}
+            id={tooltipId}
+            calloutProps={calloutProps}
+          >
+            <Img
+              key={`img-${i}`}
+              fluid={img.node.childImageSharp.fluid}
+              alt={img.node.name}
+            />
+          </TooltipHost>
+        </div>
+      ))}
+    </div>
+  );
+}

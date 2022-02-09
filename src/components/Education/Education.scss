@@ -17,12 +17,13 @@
       justify-content: space-between;
     }
 
+    &-projects {
+      @include project-section;
+    }
     &-school {
-      font-weight: bold;
       text-transform: uppercase;
       margin-bottom: 0.5rem;
       font-size: $font-size-education-school-desktop;
-      font-weight: 500;
 
       @include media(phone) {
         font-size: $font-size-education-school-mobile;
@@ -38,6 +39,7 @@
       margin-left: 1rem;
       font-size: $font-size-desktop;
       font-weight: 300;
+      @include text-border;
 
       @include media(phone) {
         font-size: $font-size-mobile;

@@ -9,8 +9,15 @@
       "duration": "6 mois",
       "location": "Paris",
       "occupation": "Stage",
-      "description": "Développement d'objets connectés, implémentation d'appareils numériques et de scripts, développement et support de plateformes web. Electronique avec Raspberry Pi, Art numérique : Création d'un hologramme interactif pour le \"Château du Clos de Vougeot\" et pour les conférences de l'Armée Française.",
-      "image": "matrice"
+      "description": "Développement d'<span>objets connectés</span>, implémentation d'<span>appareils numériques</span> et de scripts, développement et support de <span>plateformes web</span>. <span>Electronique</span> avec Raspberry Pi, <span>Art numérique</span>",
+      "image": "matrice",
+      "projects": [
+        {
+          "title": "Hologrammes",
+          "description": "Réalisation d’un <span>dispositif Holographique automatise</span> pour le <span>\"Château du Clos de Vougeot\"</span> (Bourgogne) ainsi que pour des conférences de la <span>Marine Nationnale</span> et de <span>l'Armée Française.</span>",
+          "skills": ["Python", "Javascript", "Raspberry Pi", "Electronique"]
+        }
+      ]
     },
     {
       "company": "Matrice",
@@ -22,7 +29,15 @@
       "location": "Paris",
       "occupation": "Entreprenariat",
       "description": "Co-créateur du premier laboratoire de recherche en Art Numérique au sein de Matrice. Le but des laboratoires de recherche est de réunir des équipes pluridisciplinaires autour de projets de développement technologique, de recherche, d’expérimentation et d’innovation.",
-      "image": "matrice"
+      "image": "matrice",
+      "projects": [
+        {
+          "title": "Laboratoire de recherche en Art Numérique",
+          "description": "Élaboration d’un spectacle immersif dans un Hôtel Particulier dans le centre de Paris. Spectacle mélangeant prestation artistique (théâtre, Dance) et Art Numérique, l’objectif de cette représentation étant de faire voyager le visiteur entre les différentes époques et de raconteur l’histoire de cet Hôtel",
+          "notes": "Réalisation de prestations pour des galeries d’art et écoles d’art",
+          "skills": ["Python", "Electronique", "Raspberry Pi", "Vidéo Mapping"]
+        }
+      ]
     },
     {
       "company": "Level Informatique",

@@ -49,6 +49,11 @@
     &__description {
       grid-area: description;
       font-weight: 300;
+      @include text-border;
+    }
+
+    &__projects {
+      @include project-section;
     }
 
     &__marker {
