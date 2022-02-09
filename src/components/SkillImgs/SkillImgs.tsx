@@ -19,6 +19,8 @@ export default function SkillImgs({ skills, imgs }: Props): ReactElement {
 
   return (
     <div className="SkillImgs">
+      Technologie{skills?.length > 1 ? "s" : ""} utilisée
+      {skills?.length > 1 ? "s" : ""} :
       {filteredImgs.map((img: any, i: React.Key) => (
         <div className="SkillImgs__imgs" key={i}>
           <TooltipHost

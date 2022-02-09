@@ -1,0 +1,22 @@
+@import "../../styles/_settings/variables";
+@import "../../styles/_settings/mixins";
+
+.personal-projects {
+  @include project-section;
+  &-link {
+    button {
+      border-radius: 25px;
+      padding: 0.5rem;
+      a {
+        display: flex;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: 300;
+        margin: 0rem 1rem;
+      }
+    }
+    &-text {
+      margin: 0px 5px;
+    }
+  }
+}

@@ -10,6 +10,7 @@ import SocialLinks from "../components/SocialLinks";
 import Stack from "../components/Stack";
 import Timeline from "../components/Timeline";
 import Wrapper from "../components/Wrapper";
+import PersonalProjects from "../components/PersonalProjects";
 
 export default function IndexPage(): React.ReactElement {
   const { site } = useStaticQuery(
@@ -58,6 +59,9 @@ export default function IndexPage(): React.ReactElement {
               <div className="education">
                 <Education />
               </div>
+            </section>
+            <section className="personals-projects">
+              <PersonalProjects />
             </section>
             <section className="timeline">
               <Timeline />
