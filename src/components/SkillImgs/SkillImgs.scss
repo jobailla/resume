@@ -1,10 +1,23 @@
+@import "../../styles/_settings/variables";
+@import "../../styles/_settings/mixins";
+
 .SkillImgs {
   display: flex;
   align-items: center;
   margin: 0rem 1rem;
+
+  &__text {
+    @include media(phone) {
+      font-size: 10px;
+    }
+  }
+
   &__imgs {
     width: 20px;
     height: 20px;
     margin: 0.5rem;
+    @include media(phone) {
+      margin: 0.25rem;
+    }
   }
 }

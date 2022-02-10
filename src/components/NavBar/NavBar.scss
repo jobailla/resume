@@ -11,6 +11,14 @@
   z-index: 1000;
   background-color: $navbar-color;
 
+  font-size: $font-size-desktop;
+  @include media(phone) {
+    font-size: $font-size-mobile;
+  }
+  @include media(tablet) {
+    font-size: 12px;
+  }
+
   &__header {
     display: flex;
     align-items: center;

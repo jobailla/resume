@@ -33,13 +33,11 @@
 @mixin project-section {
   display: flex;
   flex-direction: column;
-  margin: 0rem 2rem;
   padding: 1rem;
 
   &-list {
     display: flex;
     flex-direction: column;
-    margin: 0rem 1rem;
   }
 
   &-title {

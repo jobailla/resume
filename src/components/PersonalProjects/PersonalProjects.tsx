@@ -48,12 +48,12 @@ export default function PersonalProjects(): React.ReactElement {
   const { edges } = data.allFile;
 
   return (
-    <>
+    <div className="personal-projects">
       <SectionTitle
         text="Projets Personnels"
         icon={<FaLaptopHouse size={28} />}
       />
-      <div className="personal-projects">
+      <div className="personal-projects__content">
         <div className="personal-projects-list">
           {projects?.map((project: Ipersonal, i: number) => (
             <div key={`${project.title}_${i}`}>
@@ -93,6 +93,6 @@ export default function PersonalProjects(): React.ReactElement {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }

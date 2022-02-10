@@ -9,12 +9,18 @@
   &__edu {
     display: flex;
     flex-direction: column;
-    margin: 2rem 0rem;
+    margin-top: 2rem;
+    text-align: justify;
 
     &-header {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      margin-bottom: 1rem;
+      @include media(phone) {
+        flex-direction: column;
+        align-items: center;
+      }
     }
 
     &-projects {
@@ -33,10 +39,12 @@
     &-date {
       color: $green;
       font-size: 1rem;
+      @include media(phone) {
+        font-size: $font-size-mobile;
+      }
     }
 
     &-studies {
-      margin-left: 1rem;
       font-size: $font-size-desktop;
       font-weight: 300;
       @include text-border;
