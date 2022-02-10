@@ -1,0 +1,32 @@
+{
+  "projects": [
+    {
+      "title": "Casting sur mesure",
+      "description": "Création d'un moteur de recherche regroupant des annonces de casting de differentes plateformes. L'objectif pour les candidats est de pouvoir faire leur recherche de casting avec plus de facilité et de rapidité.",
+      "skills": [
+        "Javascript",
+        "Typescript",
+        "Python",
+        "React",
+        "Tensorflow",
+        "Parsing",
+        "API",
+        "Travail d'équipe"
+      ]
+    },
+    {
+      "title": "Timelapse",
+      "description": "Développement d'un <span>timelapse</span> avec <span>Raspberry Pi</span>.",
+      "skills": ["Python", "Raspberry Pi", "Electronique"],
+      "notes": "Ce projet a été l’occasion de travailler avec une limite énergétique, ce qui m’a forcé à avoir une certaine rigueur sur l’optimisation et le temps d’exécution.",
+      "link": "https://github.com/jobailla/RPIZ-timelapse"
+    },
+    {
+      "title": "Squirrel Food Checker",
+      "description": "Développement d'une PWA pour suivre l'évolution de la nourriture de mes ecureuils.",
+      "skills": ["Javascript", "Typescript", "React", "CSS", "Firebase"],
+      "notes": "Il s'agit de mon premier projet avec React. Il m'a permis de mettre en pratique les concepts que j'ai appris en auto-formation. ",
+      "link": "https://github.com/jobailla/Squirrel-Checker"
+    }
+  ]
+}

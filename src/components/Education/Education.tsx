@@ -1,10 +1,10 @@
-import "./Education.scss";
 import { FaUniversity } from "@react-icons/all-files/fa/FaUniversity";
-import { FlagIcon, FlagIconCode } from "react-flag-kit";
 import { graphql, useStaticQuery } from "gatsby";
 import React, { ReactElement } from "react";
+import { FlagIcon, FlagIconCode } from "react-flag-kit";
 import SectionTitle from "../SectionTitle";
 import SkillImgs from "../SkillImgs/SkillImgs";
+import "./Education.scss";
 
 export default function Education(): ReactElement {
   const data = useStaticQuery(graphql`
@@ -39,11 +39,6 @@ export default function Education(): ReactElement {
             notes
           }
         }
-        languages {
-          code
-          language
-          level
-        }
       }
     }
   `);
@@ -63,12 +58,6 @@ export default function Education(): ReactElement {
       skills: string[];
       notes: string;
     }[];
-  }
-
-  interface Ilang {
-    code: FlagIconCode;
-    language: string;
-    level: string;
   }
 
   return (
@@ -121,28 +110,6 @@ export default function Education(): ReactElement {
             </div>
           </div>
         ))}
-      </div>
-      <div className="Education__content ">
-        <ul>
-          {languages.map((lang: Ilang, i: number) => (
-            <li key={`${lang.code}-${i}`}>
-              <div className="Education__lang">
-                {lang.code && (
-                  <FlagIcon
-                    className="Education__lang__flag"
-                    code={lang.code}
-                    size={28}
-                  />
-                )}
-                <div
-                  className={lang.code ? "" : "Education__lang__text--noflag"}
-                >
-                  <span>{lang.language}:</span> {lang.level}.
-                </div>
-              </div>
-            </li>
-          ))}
-        </ul>
       </div>
     </div>
   );

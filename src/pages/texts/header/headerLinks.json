@@ -5,6 +5,10 @@
       "url": "about"
     },
     {
+      "label": "Projets Personnels",
+      "url": "cursus"
+    },
+    {
       "label": "Études",
       "url": "education"
     },

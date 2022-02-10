@@ -10,24 +10,20 @@ interface Props {
 }
 
 export default function SkillImgs({ skills, imgs }: Props): ReactElement {
-  const filteredImgs = imgs
-    .filter((img: any) => skills.includes(img.node.name))
-    .reverse();
+  const skillsImgs = imgs.filter((img: any) => skills.includes(img.node.name));
 
   const tooltipId = useId("tooltip");
-  const calloutProps = { gapSpace: 0 };
 
   return (
     <div className="SkillImgs">
       Technologie{skills?.length > 1 ? "s" : ""} utilisée
       {skills?.length > 1 ? "s" : ""} :
-      {filteredImgs.map((img: any, i: React.Key) => (
+      {skillsImgs.map((img: any, i: React.Key) => (
         <div className="SkillImgs__imgs" key={i}>
           <TooltipHost
             key={`tooltip-${i}`}
-            content={img.node.name}
+            content={img?.node?.name}
             id={tooltipId}
-            calloutProps={calloutProps}
           >
             <Img
               key={`img-${i}`}

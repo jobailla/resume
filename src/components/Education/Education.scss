@@ -47,23 +47,6 @@
     }
   }
 
-  &__lang {
-    display: flex;
-    align-items: center;
-
-    &__flag {
-      margin: 0;
-      margin-right: 6px;
-    }
-
-    &__text {
-      &--noflag {
-        margin-left: 2rem;
-        font-weight: 300;
-      }
-    }
-  }
-
   li {
     list-style: none;
   }

@@ -6,6 +6,7 @@ import { useId } from "@fluentui/react-hooks";
 import Img from "gatsby-image";
 import React from "react";
 import SectionTitle from "../SectionTitle";
+import Langs from "../Langs";
 
 export default function Stack(): React.ReactElement {
   const stack = useStaticQuery(
@@ -32,7 +33,9 @@ export default function Stack(): React.ReactElement {
   );
 
   const { edges } = stack.allFile;
-  const hostStyles: Partial<ITooltipHostStyles> = { root: { display: "inline-block" } };
+  const hostStyles: Partial<ITooltipHostStyles> = {
+    root: { display: "inline-block" },
+  };
   const tooltipId = useId("tooltip");
   const calloutProps = { gapSpace: 0 };
 
@@ -41,7 +44,8 @@ export default function Stack(): React.ReactElement {
       <SectionTitle icon={<GrStackOverflow size={28} />} text="Stack" />
       <div className="Stack__images">
         {edges.map((_image: undefined, i: React.Key) => (
-          <TooltipHost key={`tooltip-${i}`}
+          <TooltipHost
+            key={`tooltip-${i}`}
             content={edges[i].node.name.substr(3)}
             id={tooltipId}
             calloutProps={calloutProps}

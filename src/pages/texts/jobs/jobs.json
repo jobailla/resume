@@ -14,8 +14,8 @@
       "projects": [
         {
           "title": "Hologrammes",
-          "description": "Réalisation d’un <span>dispositif Holographique automatise</span> pour le <span>\"Château du Clos de Vougeot\"</span> (Bourgogne) ainsi que pour des conférences de la <span>Marine Nationnale</span> et de <span>l'Armée Française.</span>",
-          "skills": ["Python", "Javascript", "Raspberry Pi", "Electronique"]
+          "description": "Réalisation d’un <span>dispositif Holographique automatisé</span> pour le <span>\"Château du Clos de Vougeot\"</span> (Bourgogne) ainsi que pour des conférences de la <span>Marine Nationnale</span> et de <span>l'Armée Française.</span>",
+          "skills": ["Python", "Raspberry Pi", "Electronique"]
         }
       ]
     },
@@ -33,9 +33,15 @@
       "projects": [
         {
           "title": "Laboratoire de recherche en Art Numérique",
-          "description": "Élaboration d’un spectacle immersif dans un Hôtel Particulier dans le centre de Paris. Spectacle mélangeant prestation artistique (théâtre, Dance) et Art Numérique, l’objectif de cette représentation étant de faire voyager le visiteur entre les différentes époques et de raconteur l’histoire de cet Hôtel",
+          "description": "Élaboration d’un spectacle immersif dans un Hôtel Particulier dans le centre de Paris. Spectacle mélangeant prestations artistiques (théâtre, Dance) et Art Numérique. L’objectif de cette représentation était de faire voyager le visiteur entre les différentes époques et de raconter l’histoire de cet Hôtel.",
           "notes": "Réalisation de prestations pour des galeries d’art et écoles d’art",
-          "skills": ["Python", "Electronique", "Raspberry Pi", "Vidéo Mapping"]
+          "skills": [
+            "Python",
+            "C",
+            "Electronique",
+            "Raspberry Pi",
+            "Vidéo Mapping"
+          ]
         }
       ]
     },
@@ -48,7 +54,7 @@
       "duration": "3 mois",
       "location": "Varennes-Jarcy",
       "occupation": "Stage",
-      "description": "Stage avec un développeur web indépendant. support et développement d'applications web en Ruby on rails.",
+      "description": "Stage avec un développeur web indépendant. Support et développement d'applications web en Ruby on rails.",
       "image": "levelInformatique"
     },
     {
@@ -72,7 +78,7 @@
       "duration": "2 mois",
       "location": "Saint-Michel-sur-Orge",
       "occupation": "Stage",
-      "description": "Magasin de Maintenance Informatique, Service Informatique. Suivi physique et Informatique des stocks, Mise à jour du fichier clients. Maintenance Informatique Software/Hardware. Maintenance à domicile.",
+      "description": "Magasin de Maintenance Informatique, Service Informatique. Suivi physique et Informatique des stocks, Mise à jour du fichier client. Maintenance Informatique Software / Hardware. Maintenance à domicile.",
       "image": "starware"
     }
   ]

@@ -32,8 +32,8 @@ export default function PersonalProjects(): React.ReactElement {
           }
         }
       }
-      educationJson {
-        personal {
+      personalJson {
+        projects {
           title
           description
           skills
@@ -44,52 +44,55 @@ export default function PersonalProjects(): React.ReactElement {
     }
   `);
 
-  const { personal } = data.educationJson;
+  const { projects } = data.personalJson;
   const { edges } = data.allFile;
 
   return (
-    <div className="personal-projects">
+    <>
       <SectionTitle
         text="Projets Personnels"
         icon={<FaLaptopHouse size={28} />}
       />
-
-      <div className="personal-projects-list">
-        {personal?.map((project: Ipersonal, i: number) => (
-          <div key={`${project.title}_${i}`}>
-            <div className="personal-projects-title">{`${project?.title}`}</div>
-            <div className="personal-projects-description">
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: project?.description,
-                }}
-              />
+      <div className="personal-projects">
+        <div className="personal-projects-list">
+          {projects?.map((project: Ipersonal, i: number) => (
+            <div key={`${project.title}_${i}`}>
+              <div className="personal-projects-title">{`${project?.title}`}</div>
+              <div className="personal-projects-description">
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: project?.description,
+                  }}
+                />
+              </div>
+              <div className="personal-projects-notes">
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: project?.notes,
+                  }}
+                />
+              </div>
+              <div className="personal-projects-skills">
+                <SkillImgs skills={project?.skills} imgs={edges} />
+              </div>
+              {project?.link && (
+                <div className="personal-projects-link">
+                  <button className="personal-projects-link-button">
+                    <a
+                      href={project?.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <FaGithub size={18} />
+                      <div className="personal-projects-link-text">Github</div>
+                    </a>
+                  </button>
+                </div>
+              )}
             </div>
-            <div className="personal-projects-notes">
-              <div
-                dangerouslySetInnerHTML={{
-                  __html: project?.notes,
-                }}
-              />
-            </div>
-            <div className="personal-projects-skills">
-              <SkillImgs skills={project?.skills} imgs={edges} />
-            </div>
-            <div className="personal-projects-link">
-              <button className="personal-projects-link-button">
-                <a
-                  href={project?.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FaGithub size={18} />
-                  <div className="personal-projects-link-text">Github</div>
-                </a>
-              </button>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }

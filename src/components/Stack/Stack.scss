@@ -2,6 +2,8 @@
 @import "../../styles/_settings/mixins";
 
 .Stack {
+  display: flex;
+  flex-direction: column;
   &__images {
     display: grid;
     grid-template-columns: repeat(7, $icon-size);

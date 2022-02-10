@@ -1,0 +1,14 @@
+{
+  "languages": [
+    {
+      "language": "Français",
+      "level": "Langue maternelle",
+      "code": "FR"
+    },
+    {
+      "language": "Anglais",
+      "level": "Intermédiaire",
+      "code": "GB"
+    }
+  ]
+}

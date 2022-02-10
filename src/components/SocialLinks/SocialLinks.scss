@@ -53,30 +53,31 @@
       max-width: 15rem;
       padding-right: 1.5rem;
       transition: max-width 0.3s ease-out;
+      border: 1px solid;
 
       .icon {
         .darkblue {
-          background: #4267b2;
+          background: $social-icon-darkblue;
         }
 
         .lightblue {
-          background: #1da1f2;
+          background: $social-icon-lightblue;
         }
 
         .grey {
-          background: #333;
+          background: $social-icon-grey;
         }
 
         .red {
-          background: #e1306c;
+          background: $social-icon-red;
         }
 
         .green {
-          background: #3ac24a;
+          background: $social-icon-green;
         }
 
         i {
-          color: #fff;
+          color: $white;
         }
       }
     }
@@ -124,21 +125,21 @@
 }
 
 .darkblue {
-  color: #4267b2;
+  color: $social-icon-darkblue;
 }
 
 .lightblue {
-  color: #1da1f2;
+  color: $social-icon-lightblue;
 }
 
 .grey {
-  color: #333;
+  color: $social-icon-grey;
 }
 
 .red {
-  color: #e1306c;
+  color: $social-icon-red;
 }
 
 .green {
-  color: #3ac24a;
+  color: $social-icon-green;
 }

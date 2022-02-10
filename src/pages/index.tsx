@@ -11,6 +11,7 @@ import Stack from "../components/Stack";
 import Timeline from "../components/Timeline";
 import Wrapper from "../components/Wrapper";
 import PersonalProjects from "../components/PersonalProjects";
+import Langs from "../components/Langs/";
 
 export default function IndexPage(): React.ReactElement {
   const { site } = useStaticQuery(
@@ -53,15 +54,16 @@ export default function IndexPage(): React.ReactElement {
               </div>
               <div className="about">
                 <About />
+                <Langs />
               </div>
             </section>
             <section className="cursus">
+              <section className="personals-projects">
+                <PersonalProjects />
+              </section>
               <div className="education">
                 <Education />
               </div>
-            </section>
-            <section className="personals-projects">
-              <PersonalProjects />
             </section>
             <section className="timeline">
               <Timeline />

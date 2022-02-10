@@ -1,0 +1,17 @@
+@import "../../styles/_settings/variables";
+@import "../../styles/_settings/mixins";
+
+.langs {
+  margin: 2rem 0rem;
+  &__list {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0rem;
+    &__text {
+      &--noflag {
+        margin-left: 2rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
