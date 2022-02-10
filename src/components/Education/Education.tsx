@@ -73,7 +73,13 @@ export default function Education(): ReactElement {
                   {edu.startYear} - {edu.endYear || "Present"}
                 </div>
               </div>
-              <div className="Education__edu-studies">{edu.field}</div>
+              <div className="Education__edu-studies">
+                <div
+                  dangerouslySetInnerHTML={{
+                    __html: edu?.field,
+                  }}
+                />
+              </div>
               {edu.projects?.length > 0 && (
                 <div className="Education__edu-projects">
                   <div className="Education__edu-projects--header">

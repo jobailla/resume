@@ -28,12 +28,12 @@
       "duration": "1 an",
       "location": "Paris",
       "occupation": "Entreprenariat",
-      "description": "Co-créateur du premier laboratoire de recherche en Art Numérique au sein de Matrice. Le but des laboratoires de recherche est de réunir des équipes pluridisciplinaires autour de projets de développement technologique, de recherche, d’expérimentation et d’innovation.",
+      "description": "Co-créateur du premier <span>laboratoire de recherche</span> en <span>Art Numérique</span> au sein de Matrice. Le but des laboratoires de recherche est de réunir des équipes pluridisciplinaires autour de projets de développement technologique, de <span>recherche</span>, d’<span>expérimentation</span> et d’<span>innovation</span>.",
       "image": "matrice",
       "projects": [
         {
           "title": "Laboratoire de recherche en Art Numérique",
-          "description": "Élaboration d’un spectacle immersif dans un Hôtel Particulier dans le centre de Paris. Spectacle mélangeant prestations artistiques (théâtre, Dance) et Art Numérique. L’objectif de cette représentation était de faire voyager le visiteur entre les différentes époques et de raconter l’histoire de cet Hôtel.",
+          "description": "Élaboration d’un <span>spectacle immersif</span> dans un Hôtel Particulier dans le centre de Paris. Spectacle mélangeant prestations artistiques (théâtre, Dance) et <span>Art Numérique</span>. L’objectif de cette représentation était de faire voyager le visiteur entre les différentes époques et de raconter l’histoire de cet Hôtel.",
           "notes": "Réalisation de prestations pour des galeries d’art et écoles d’art",
           "skills": [
             "Python",
