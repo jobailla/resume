@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "Casting sur mesure",
-      "description": "Création d'un <span>moteur de recherche</span> regroupant des annonces de <span>casting</span> de differentes plateformes. L'objectif pour les candidats est de pouvoir faire leur recherche de casting avec plus de facilité et de rapidité.",
+      "description": "Création d'un <span>moteur de recherche</span> regroupant des annonces de differentes plateformes. L'objectif pour les candidats est de pouvoir faire leur recherche de casting avec plus de facilité et de rapidité.",
       "skills": [
         "Javascript",
         "Typescript",
@@ -23,7 +23,7 @@
     },
     {
       "title": "Squirrel Food Checker",
-      "description": "Développement d'une <span>PWA</span> pour suivre l'évolution de la nourriture de mes ecureuils.",
+      "description": "Développement d'une <span>PWA</span> (Progressive Web App) pour suivre l'évolution de la nourriture de mes ecureuils.",
       "skills": ["Javascript", "Typescript", "React", "CSS", "Firebase"],
       "notes": "Il s'agit de mon premier projet avec <span>React</span>. Il m'a permis de mettre en pratique les concepts que j'ai appris en <span>auto-formation</span>.",
       "link": "https://github.com/jobailla/Squirrel-Checker"
