@@ -8,12 +8,12 @@ export default function Avatar(props: {
   title: string;
 }): React.ReactElement {
   const data = useStaticQuery(graphql`
-    query {
+    {
       file(relativePath: { eq: "avatar.jpg" }) {
         childImageSharp {
           gatsbyImageData(
             layout: FIXED
-            formats: AUTO
+            formats: WEBP
             quality: 100
             width: 200
           )
