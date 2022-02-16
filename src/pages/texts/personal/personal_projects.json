@@ -9,9 +9,7 @@
         "Python",
         "React",
         "Tensorflow",
-        "Parsing",
-        "API",
-        "Travail d'équipe"
+        "GraphQL"
       ]
     },
     {
@@ -24,7 +22,13 @@
     {
       "title": "Squirrel Food Checker",
       "description": "Développement d'une <span>PWA</span> (Progressive Web App) pour suivre l'évolution de la nourriture de mes ecureuils.",
-      "skills": ["Javascript", "Typescript", "React", "CSS", "Firebase"],
+      "skills": [
+        "Javascript",
+        "Typescript",
+        "React",
+        "Styled-components",
+        "Firebase"
+      ],
       "notes": "Il s'agit de mon premier projet avec <span>React</span>. Il m'a permis de mettre en pratique les concepts que j'ai appris en <span>auto-formation</span>.",
       "link": "https://github.com/jobailla/Squirrel-Checker"
     }
