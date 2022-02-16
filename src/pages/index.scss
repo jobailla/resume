@@ -17,7 +17,11 @@
     "cursus"
     "timeline";
   gap: 3rem;
+
   text-align: justify;
+  @include media(phone) {
+    text-align: start;
+  }
 }
 
 .social {

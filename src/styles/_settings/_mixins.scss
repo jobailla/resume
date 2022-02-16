@@ -66,10 +66,6 @@
     text-transform: uppercase;
     margin-bottom: 0.5rem;
     font-size: 16px;
-
-    @include media(phone) {
-      font-size: $font-size-education-school-mobile;
-    }
   }
 }
 
