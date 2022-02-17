@@ -107,18 +107,18 @@
     }
 
     i {
-      font-size: $social-icon-full / 2;
+      font-size: calc($social-icon-full / 2);
       line-height: $social-icon-full;
       transition: all 0.3s ease-out;
 
       @include media(phone) {
         line-height: $social-icon-min;
-        font-size: $social-icon-min / 2;
+        font-size: calc($social-icon-min / 2);
       }
 
       @include media(phoneSmall) {
         line-height: $social-icon-min;
-        font-size: ($social-icon-min / 2);
+        font-size: calc($social-icon-min / 2);
       }
     }
   }
