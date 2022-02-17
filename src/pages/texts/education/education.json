@@ -14,7 +14,7 @@
         },
         {
           "title": "42 Electronics",
-          "description": "Le module <span>électronique</span> de <span>42</span> est un projet libre en équipe de 4 étudiants. Il consiste à designer, concevoir, assembler et programmer un circuit imprimé (PCB) basé sur un micro-controleur <span<PIC32</span>. Nous avons décidé de fabriquer un <span>gant de motion capture</span> communiquant en Bluetooth et stockant des données sur une carte micro-SD.",
+          "description": "Le module <span>électronique</span> de <span>42</span> est un projet libre en équipe de 4 étudiants. Il consiste à designer, concevoir, assembler et programmer un circuit imprimé (PCB) basé sur un micro-controleur <span>PIC32</span>. Nous avons décidé de fabriquer un <span>gant de motion capture</span> communiquant en Bluetooth et stockant des données sur une carte micro-SD.",
           "skills": ["C", "Electronique", "PIC32", "Altium"],
           "notes": "Ce projet a été l’occasion de travailler en équipe pendant 8 mois et de développer mes compétences aussi bien théoriques que pratiques."
         },
@@ -26,7 +26,7 @@
         },
         {
           "title": "Printf",
-          "description": "Projet qui consiste à recoder la fonction <span>printf</span> de la librarie standard <stdio.h>. Cette fonction sert à afficher des données dans un flux de sortie.",
+          "description": "Projet qui consiste à recoder la fonction <span>printf</span> de la librarie standard. Cette fonction sert à afficher des données dans un flux de sortie.",
           "skills": ["C"]
         }
       ]
