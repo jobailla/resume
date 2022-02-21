@@ -104,22 +104,27 @@ module.exports = {
     // ServiceWorker
     "gatsby-plugin-offline",
     // Analytics
+    // {
+    //   resolve: `gatsby-plugin-gtag`,
+    //   options: {
+    //     trackingId: process.env.GATSBY_GOOGLE_TRAKINGID,
+    //     head: false,
+    //     anonymize: true,
+    //   },
+    // },
     {
-      resolve: `gatsby-plugin-gtag`,
+      resolve: "gatsby-plugin-vercel",
       options: {
-        trackingId: process.env.GATSBY_GOOGLE_TRAKINGID,
-        head: false,
-        anonymize: true,
+        debug: true,
       },
     },
-    "gatsby-plugin-vercel",
     // Preconnect
     {
       resolve: "gatsby-plugin-preconnect",
       options: {
         domains: [
           "https://kit.fontawesome.com/e0a8da67ca.js",
-          "https://www.google-analytics.com",
+          // "https://www.google-analytics.com",
           "https://fonts.googleapis.com",
         ],
       },
