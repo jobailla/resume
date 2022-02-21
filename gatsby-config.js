@@ -118,6 +118,23 @@ module.exports = {
         debug: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-amplitude-analytics`,
+      options: {
+        // Specify the API key for your Amplitude Project (required)
+        apiKey: "process.env.AMPLITUDE_ANALYTICS_API_KEY",
+        head: false,
+        respectDNT: true,
+        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        amplitudeConfig: {
+          saveEvents: true,
+          includeUtm: true,
+          includeReferrer: true,
+        },
+        // Specify NODE_ENVs in which the plugin should be loaded (optional)
+        environments: ["production"],
+      },
+    },
     // Preconnect
     {
       resolve: "gatsby-plugin-preconnect",
