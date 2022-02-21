@@ -115,7 +115,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-vercel",
       options: {
-        debug: true,
+        debug: false,
       },
     },
     {
