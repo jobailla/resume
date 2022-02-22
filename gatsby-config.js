@@ -124,7 +124,7 @@ module.exports = {
       options: {
         domains: [
           "https://kit.fontawesome.com/e0a8da67ca.js",
-          // "https://www.google-analytics.com",
+          "https://www.google-analytics.com",
           "https://fonts.googleapis.com",
         ],
       },
