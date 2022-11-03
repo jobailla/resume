@@ -34,6 +34,7 @@ export default function Navbar(): React.ReactElement {
           {headerLinks.map(
             (headerLink: { label: string; url: string }, i: number) => (
               <Link
+                href={headerLink.url}
                 className="navBar__link"
                 key={`header-link-${i}`}
                 onClick={() => setToggled(false)}
