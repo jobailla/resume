@@ -10,7 +10,7 @@
     "lintfix": "eslint . --fix --ext .js,.ts,.tsx",
     "serve": "gatsby serve",
     "test-coverage": "react-scripts test --env=jsdom --watchAll=false --coverage && open-cli ./coverage/lcov-report/index.html",
-    "type-coverage": "type-coverage"
+    "type-coverage": "type-coverage",
     "install": "pnpm install --no-frozen-lockfile"
   },
   "dependencies": {
