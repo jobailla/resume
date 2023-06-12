@@ -54,7 +54,7 @@
     "node-sass": "^8.0.0",
     "preact": "^10.13.1",
     "preact-render-to-string": "^5.2.6",
-    "prettier": "^2.8.6",
+    "prettier": "^2.8.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-flag-kit": "^1.1.1",
