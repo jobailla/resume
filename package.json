@@ -37,7 +37,7 @@
     "gatsby-plugin-load-script": "^1.1.0",
     "gatsby-plugin-manifest": "^5.8.0",
     "gatsby-plugin-offline": "^6.8.0",
-    "gatsby-plugin-preact": "^7.8.0",
+    "gatsby-plugin-preact": "^7.10.0",
     "gatsby-plugin-preconnect": "^1.4.0",
     "gatsby-plugin-purgecss": "^6.2.1",
     "gatsby-plugin-robots-txt": "^1.8.0",
