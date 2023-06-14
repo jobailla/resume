@@ -26,7 +26,7 @@
     "babel-eslint": "^10.1.0",
     "core:8.0.0": "link:@babel/core:8.0.0",
     "eslint-plugin-sort-imports-es6-autofix": "^0.6.0",
-    "eslint-webpack-plugin": "^4.0.0",
+    "eslint-webpack-plugin": "^4.0.1",
     "fontawesome-svg-core:6.3.0": "link:@fortawesome/fontawesome-svg-core:6.3.0",
     "gatsby": "^5.8.0",
     "gatsby-image": "^3.11.0",
