@@ -43,7 +43,7 @@
     "gatsby-plugin-robots-txt": "^1.8.0",
     "gatsby-plugin-sass": "^6.8.0",
     "gatsby-plugin-sharp": "^5.8.0",
-    "gatsby-plugin-typescript": "^5.8.0",
+    "gatsby-plugin-typescript": "^5.11.0",
     "gatsby-plugin-vercel": "^1.0.4",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.30",
     "gatsby-source-filesystem": "^5.8.0",
