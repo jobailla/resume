@@ -1,9 +1,9 @@
+import "./PersonalProjects.scss";
+import { FaGithub, FaLaptopHouse } from "react-icons/fa";
 import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
-import { FaLaptopHouse, FaGithub } from "react-icons/fa";
 import SectionTitle from "../SectionTitle";
 import SkillImgs from "../SkillImgs";
-import "./PersonalProjects.scss";
 
 interface Ipersonal {
   title: string;

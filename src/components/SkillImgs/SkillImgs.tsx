@@ -1,8 +1,8 @@
-import { useId } from "@fluentui/react-hooks";
+import "./SkillImgs.scss";
 import { ITooltipHostStyles, TooltipHost } from "@fluentui/react/lib/Tooltip";
+import { useId } from "@fluentui/react-hooks";
 import Img from "gatsby-image";
 import React, { ReactElement } from "react";
-import "./SkillImgs.scss";
 
 interface Props {
   skills: string[];

@@ -1,7 +1,7 @@
-import React from "react";
-import { graphql, useStaticQuery } from "gatsby";
-import { FlagIcon, FlagIconCode } from "react-flag-kit";
 import "./Langs.scss";
+import { FlagIcon, FlagIconCode } from "react-flag-kit";
+import { graphql, useStaticQuery } from "gatsby";
+import React from "react";
 
 export default function Langs(): React.ReactElement {
   interface Ilang {

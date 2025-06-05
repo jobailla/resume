@@ -4,9 +4,9 @@ import { ITooltipHostStyles, TooltipHost } from "@fluentui/react/lib/Tooltip";
 import { graphql, useStaticQuery } from "gatsby";
 import { useId } from "@fluentui/react-hooks";
 import Img from "gatsby-image";
+import Langs from "../Langs";
 import React from "react";
 import SectionTitle from "../SectionTitle";
-import Langs from "../Langs";
 
 export default function Stack(): React.ReactElement {
   const stack = useStaticQuery(
