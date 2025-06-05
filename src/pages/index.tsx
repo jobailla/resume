@@ -4,14 +4,14 @@ import { graphql, useStaticQuery } from "gatsby";
 import About from "../components/About/About";
 import Avatar from "../components/Avatar";
 import Education from "../components/Education";
+import Langs from "../components/Langs/";
 import Layout from "../components/Layout";
+import PersonalProjects from "../components/PersonalProjects";
 import SEO from "../components/SEO";
 import SocialLinks from "../components/SocialLinks";
 import Stack from "../components/Stack";
 import Timeline from "../components/Timeline";
 import Wrapper from "../components/Wrapper";
-import PersonalProjects from "../components/PersonalProjects";
-import Langs from "../components/Langs/";
 
 export default function IndexPage(): React.ReactElement {
   const { site } = useStaticQuery(

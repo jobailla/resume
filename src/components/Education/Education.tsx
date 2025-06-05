@@ -1,10 +1,10 @@
+import "./Education.scss";
 import { FaUniversity } from "@react-icons/all-files/fa/FaUniversity";
+import { FlagIcon, FlagIconCode } from "react-flag-kit";
 import { graphql, useStaticQuery } from "gatsby";
 import React, { ReactElement } from "react";
-import { FlagIcon, FlagIconCode } from "react-flag-kit";
 import SectionTitle from "../SectionTitle";
 import SkillImgs from "../SkillImgs/SkillImgs";
-import "./Education.scss";
 
 export default function Education(): ReactElement {
   const data = useStaticQuery(graphql`
