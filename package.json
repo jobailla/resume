@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@babel/core": "^7.21.3",
-    "@fluentui/react": "^8.106.8",
+    "@fluentui/react": "^8.123.6",
     "@fortawesome/fontawesome-svg-core": "^6.3.0",
     "@react-icons/all-files": "^4.1.0",
     "@types/react": "^18.0.28",
