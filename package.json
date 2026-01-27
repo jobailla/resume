@@ -51,7 +51,7 @@
     "gatsby-transformer-remark": "^6.8.0",
     "gatsby-transformer-sharp": "^5.8.0",
     "graphql": "^16.6.0",
-    "node-sass": "^8.0.0",
+    "node-sass": "^9.0.0",
     "preact": "^10.13.1",
     "preact-render-to-string": "^5.2.6",
     "prettier": "^2.8.6",
